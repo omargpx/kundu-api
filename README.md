@@ -14,7 +14,7 @@ chore: to show the change of dependencies
 
 To execute the api, follow the following commands:
 ```
->  git checkout kundu-api
-
+>  git clone https://github.com/citseOfficial/Kundu-api.git
+>  cd Kundu-api
 > .\gradlew bootRun
 ```
