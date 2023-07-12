@@ -1,6 +1,6 @@
 # Kundu Project
 
-[![SkillIcons](https://skillicons.dev/icons?i=androidstudio,spring.mysql,docker,sentry.kotlin,java,git)](https://skillicons.dev)
+[![SkillIcons](https://skillicons.dev/icons?i=androidstudio,spring,mysql,docker,sentry,kotlin,java,git)](https://skillicons.dev)
 
 Commit nomenclature:
 ```
