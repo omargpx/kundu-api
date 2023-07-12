@@ -2,6 +2,13 @@
 
 [![SkillIcons](https://skillicons.dev/icons?i=androidstudio,spring,mysql,docker,sentry,kotlin,java,git)](https://skillicons.dev)
 
+# Docs
+
+- [Nomenclature](#nomenclature)
+- [Database diagram](https://github.com/citseOfficial/Kundu-api/tree/main/src/main/resources/.github/dbo_kundu_diagram.png)
+- [Kundu avatars](https://ibb.co/album/dWqKW6)
+
+# Nomenclature
 Commit nomenclature:
 ```
 feat: to add new features
