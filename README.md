@@ -11,3 +11,10 @@ ref: to specify algorithm refactoring
 test: to display features under test
 chore: to show the change of dependencies
 ```
+
+To execute the api, follow the following commands:
+```
+>  git checkout kundu-api
+
+> .\gradlew bootRun
+```
