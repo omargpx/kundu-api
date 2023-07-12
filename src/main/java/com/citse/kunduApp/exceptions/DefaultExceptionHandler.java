@@ -1,7 +1,6 @@
 package com.citse.kunduApp.exceptions;
 
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.PushBuilder;
 import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

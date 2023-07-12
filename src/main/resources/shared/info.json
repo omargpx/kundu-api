@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "name": "KunduApp - Backend",
+    "version": "1.0",
+    "description": "KunduApp is a mission group monitoring application"
+  },
+  "keywords":["KunduApp","CITSE","Kundu"],
+  "public_paths": {
+    "avatar": [
+      "/avatars"
+    ]
+  },
+  "url": "/info",
+  "licence": "ISC"
+}
