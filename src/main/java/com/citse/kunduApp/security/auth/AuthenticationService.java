@@ -1,16 +1,20 @@
 package com.citse.kunduApp.security.auth;
 
+import com.citse.kunduApp.entity.Person;
 import com.citse.kunduApp.entity.User;
+import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.security.config.JwtService;
 import com.citse.kunduApp.security.token.Token;
 import com.citse.kunduApp.security.token.TokenRepository;
 import com.citse.kunduApp.security.token.TokenType;
+import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.models.Role;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,6 +22,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
@@ -28,6 +35,10 @@ public class AuthenticationService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
+    @Autowired
+    private KunduUtilitiesService kus;
+    @Autowired
+    private PersonDao personRepo;
 
 
     public AuthenticationResponse register(RegisterRequest request) {
@@ -36,10 +47,21 @@ public class AuthenticationService {
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.USER)
+                .lastConnect(LocalDateTime.now())
                 .secure(request.getSecure())
                 .build();
         var savedUser = userRepo.save(user);
-        var jwtToken = jwtService.generateToken(user);
+        var person = Person.builder()
+                .name(request.getName())
+                .phone(request.getPhone())
+                .avatar(request.getAvatar())
+                .KunduCode(kus.KunduCode("KSC"))
+                .user(savedUser)
+                .build();
+        personRepo.save(person);
+        Map<String,Object> additionalInfo = new HashMap<>();
+        additionalInfo.put("KunduCode",person.getKunduCode());
+        var jwtToken = jwtService.generateToken(additionalInfo,user);
         var refreshToken = jwtService.generateRefreshToken(user);
         saveUserToken(savedUser,jwtToken);
         return AuthenticationResponse.builder().accessToken(jwtToken).refreshToken(refreshToken).build();
@@ -53,7 +75,10 @@ public class AuthenticationService {
                 )
         );
         var user = userRepo.findByUsername(request.getUsername()).orElseThrow();
-        var jwtToken = jwtService.generateToken(user);
+        var person = personRepo.findPersonByUsername(user.getUsername());
+        Map<String,Object> additionalInfo = new HashMap<>();
+        additionalInfo.put("KunduCode",person.getKunduCode());
+        var jwtToken = jwtService.generateToken(additionalInfo,user);
         var refreshToken = jwtService.generateRefreshToken(user);
         revokeAllUserTokens(user);
         saveUserToken(user,jwtToken);

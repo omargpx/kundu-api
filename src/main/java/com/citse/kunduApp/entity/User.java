@@ -10,6 +10,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -21,8 +22,8 @@ import java.util.List;
 @Table(name = "TSG_USERS")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue
-    @Column(name = "id_user_fk")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_user")
     private Integer id;
     @Column(name = "no_username", nullable = false)
     private String username;
@@ -32,9 +33,10 @@ public class User implements UserDetails {
     private String email;
     @Column(name = "co_secure_pass")
     private Integer secure;
-
     @Enumerated(EnumType.STRING)
     private Role role;
+    @Column(name = "fe_last_connect")
+    private LocalDateTime lastConnect;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
