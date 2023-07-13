@@ -22,6 +22,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
@@ -46,7 +47,7 @@ public class AuthenticationService {
                 .username(request.getUsername())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(Role.USER)
+                .role(request.getRole()!=null? request.getRole() : Role.USER)
                 .lastConnect(LocalDateTime.now())
                 .secure(request.getSecure())
                 .build();
@@ -56,6 +57,7 @@ public class AuthenticationService {
                 .phone(request.getPhone())
                 .avatar(request.getAvatar())
                 .KunduCode(kus.KunduCode("KSC"))
+                .joinDate(LocalDate.now())
                 .user(savedUser)
                 .build();
         personRepo.save(person);

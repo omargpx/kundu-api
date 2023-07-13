@@ -1,6 +1,7 @@
 package com.citse.kunduApp.security.auth;
 
 
+import com.citse.kunduApp.utils.models.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,6 +17,7 @@ public class RegisterRequest {
     private String password;
     private String email;
     private Integer secure;
+    private Role role;
     // PERSON ATTRIBUTES
     private String name;
     private String phone;
