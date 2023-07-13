@@ -5,6 +5,8 @@ import com.citse.kunduApp.entity.User;
 import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.security.config.JwtService;
+import com.citse.kunduApp.security.mock.InvitationRepository;
+import com.citse.kunduApp.security.mock.InvitationResponse;
 import com.citse.kunduApp.security.token.Token;
 import com.citse.kunduApp.security.token.TokenRepository;
 import com.citse.kunduApp.security.token.TokenType;
@@ -36,6 +38,7 @@ public class AuthenticationService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
+    private final InvitationRepository invitationRepository;
     @Autowired
     private KunduUtilitiesService kus;
     @Autowired
@@ -56,7 +59,7 @@ public class AuthenticationService {
                 .name(request.getName())
                 .phone(request.getPhone())
                 .avatar(request.getAvatar())
-                .KunduCode(kus.KunduCode("KSC"))
+                .kunduCode(kus.KunduCode("KSC"))
                 .joinDate(LocalDate.now())
                 .user(savedUser)
                 .build();
@@ -121,10 +124,10 @@ public class AuthenticationService {
         refreshToken = authHeader.substring(7);
         username = jwtService.extractUsername(refreshToken);
         if (username != null) {
-            var user = this.userRepo.findByEmail(username)
+            var user = this.userRepo.findByUsername(username)
                     .orElseThrow();
             if (jwtService.isTokenValid(refreshToken, user)) {
-                var accessToken = jwtService.generateToken(user);
+                var accessToken = jwtService.generateRefreshToken(user);
                 revokeAllUserTokens(user);
                 saveUserToken(user, accessToken);
                 var authResponse = AuthenticationResponse.builder()
@@ -134,5 +137,12 @@ public class AuthenticationService {
                 new ObjectMapper().writeValue(response.getOutputStream(), authResponse);
             }
         }
+    }
+
+    public InvitationResponse verifyAccountInvitation(String email){
+        var invitation_reserved = invitationRepository.findByEmail(email);
+        if(invitation_reserved.isPresent())
+            return InvitationResponse.builder().message("Go ahead").isSuccess(true).build();
+        return InvitationResponse.builder().message("Unreserved").isSuccess(false).build();
     }
 }

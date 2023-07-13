@@ -9,17 +9,13 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class KunduException extends RuntimeException{
-    private String path;
-    private Object detail;
+    private String origin;
     private HttpStatus status;
-    private LocalDateTime localDateTime;
 
-    public KunduException(String path,String message, Object detail, HttpStatus status, LocalDateTime localDateTime) {
+    public KunduException(String origin,String message, HttpStatus status) {
         super(message);
-        this.path = path;
-        this.detail = detail;
+        this.origin = origin;
         this.status = status;
-        this.localDateTime = localDateTime;
     }
 
 }

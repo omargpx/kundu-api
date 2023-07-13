@@ -42,7 +42,7 @@ public class DefaultExceptionHandler {
         return new ResponseEntity<>(apiError,HttpStatus.UNAUTHORIZED);
     }
 
-    @ExceptionHandler(value = {KunduException.class, Exception.class, RuntimeException.class})
+    @ExceptionHandler(value = {KunduException.class})
     public ResponseEntity<ApiError> handleException(KunduException ke,
                                                     HttpServletRequest request){
         ApiError apiError = new ApiError(

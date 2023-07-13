@@ -1,7 +1,9 @@
 package com.citse.kunduApp.utils.logic;
 
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
+import com.citse.kunduApp.utils.models.KResponse;
 import jakarta.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.security.SecureRandom;
@@ -32,6 +34,16 @@ public class KUS implements KunduUtilitiesService {
         specificHeaders.put("platform", request.getHeader("sec-ch-ua-platform"));
         specificHeaders.put("sys_info","/info");
         return specificHeaders;
+    }
+
+    @Override
+    public KResponse getResponse(HttpServletRequest url, String origin, Object data, HttpStatus status) {
+        return KResponse.builder()
+                .url(url.getRequestURI())
+                .origin(origin)
+                .body(data)
+                .status(status.name())
+                .build();
     }
 
     private static String getCurrentYear() {

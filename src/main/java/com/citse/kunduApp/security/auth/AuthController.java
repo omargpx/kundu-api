@@ -1,13 +1,13 @@
 package com.citse.kunduApp.security.auth;
 
+import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
+import com.citse.kunduApp.utils.models.Services;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
@@ -17,6 +17,7 @@ import java.io.IOException;
 public class AuthController {
 
     private final AuthenticationService service;
+    private final KunduUtilitiesService kus;
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request){
@@ -33,5 +34,11 @@ public class AuthController {
             HttpServletResponse response
     ) throws IOException {
         service.refreshToken(request, response);
+    }
+
+    @GetMapping("/invitation")
+    public ResponseEntity<?> verifyAccountInvitation(@RequestParam(name = "email")String email,
+                                                     HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyAccountInvitation(email),HttpStatus.OK));
     }
 }

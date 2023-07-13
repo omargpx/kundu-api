@@ -1,6 +1,8 @@
 package com.citse.kunduApp.entity;
 
+import com.citse.kunduApp.security.mock.Invitation;
 import com.citse.kunduApp.utils.models.Role;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -37,6 +39,14 @@ public class User implements UserDetails {
     private Role role;
     @Column(name = "fe_last_connect")
     private LocalDateTime lastConnect;
+
+    @JsonIgnore
+    @OneToOne(mappedBy = "user", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    private Person person;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "userReserve")
+    private List<Invitation> invitations;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

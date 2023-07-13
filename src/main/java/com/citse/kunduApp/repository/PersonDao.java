@@ -10,7 +10,9 @@ import java.util.Optional;
 
 @Repository
 public interface PersonDao extends JpaRepository<Person,Integer> {
-
+    Person findByKunduCode(String kunduCode);
     @Query("SELECT p FROM Person p JOIN p.user u WHERE u.username = :username")
     Person findPersonByUsername(@Param("username") String username);
+
+
 }

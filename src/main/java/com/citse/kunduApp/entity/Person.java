@@ -1,5 +1,6 @@
 package com.citse.kunduApp.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -28,7 +29,7 @@ public class Person implements Serializable {
     @Column(name = "url_avatar", nullable = false)
     private String avatar;
     @Column(name = "co_kundu", nullable = false, unique = true)
-    private String KunduCode;
+    private String kunduCode;
     @Column(name = "dc_biography")
     private String biography;
     @Column(name = "nu_experience")
@@ -38,7 +39,8 @@ public class Person implements Serializable {
     @Column(name = "fe_join_to_kundu")
     private LocalDate joinDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnore
+    @OneToOne
     @JoinColumn(name = "fk_user_id")
     private User user;
 }
