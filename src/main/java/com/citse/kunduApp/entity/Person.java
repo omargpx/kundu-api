@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -39,8 +40,22 @@ public class Person implements Serializable {
     @Column(name = "fe_join_to_kundu")
     private LocalDate joinDate;
 
-    @JsonIgnore
+    @JsonIgnoreProperties({"person","invitations","secure","email","password","enabled",
+            "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})
     @OneToOne
     @JoinColumn(name = "fk_user_id")
     private User user;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "follower")
+    private List<Follow> followers;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "followed")
+    private List<Follow> following;
+
+    @JsonIgnoreProperties({"person"})
+    @OneToOne(mappedBy = "person", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    private Member member;
+
 }

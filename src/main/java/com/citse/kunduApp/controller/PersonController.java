@@ -26,9 +26,12 @@ public class PersonController {
 
     @GetMapping
     public ResponseEntity<?> getAll(@RequestParam(name = "id",required = false)Integer id,
+                                    @RequestParam(name = "code",required = false)String code,
                                     HttpServletRequest request){
         if(null!=id)
             return ResponseEntity.ok(kus.getResponse(request,origin,service.getById(id), HttpStatus.OK));
+        if(null!=code)
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.findByKunduCode(code), HttpStatus.OK));
         return ResponseEntity.ok(kus.getResponse(request,origin,service.getAll(),HttpStatus.OK));
     }
 }

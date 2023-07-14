@@ -140,6 +140,9 @@ public class AuthenticationService {
     }
 
     public InvitationResponse verifyAccountInvitation(String email){
+        var user = userRepo.findByEmail(email);
+        if(user.isPresent())
+            return InvitationResponse.builder().message("Already exists as user").isSuccess(false).build();
         var invitation_reserved = invitationRepository.findByEmail(email);
         if(invitation_reserved.isPresent())
             return InvitationResponse.builder().message("Go ahead").isSuccess(true).build();
