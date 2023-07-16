@@ -41,4 +41,5 @@ public class AuthController {
                                                      HttpServletRequest request){
         return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyAccountInvitation(email),HttpStatus.OK));
     }
+
 }

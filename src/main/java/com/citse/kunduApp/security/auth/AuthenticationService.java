@@ -6,7 +6,7 @@ import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.security.config.JwtService;
 import com.citse.kunduApp.security.mock.InvitationRepository;
-import com.citse.kunduApp.security.mock.InvitationResponse;
+import com.citse.kunduApp.security.mock.VerifyResponse;
 import com.citse.kunduApp.security.token.Token;
 import com.citse.kunduApp.security.token.TokenRepository;
 import com.citse.kunduApp.security.token.TokenType;
@@ -139,13 +139,20 @@ public class AuthenticationService {
         }
     }
 
-    public InvitationResponse verifyAccountInvitation(String email){
+    public VerifyResponse verifyAccountInvitation(String email){
         var user = userRepo.findByEmail(email);
         if(user.isPresent())
-            return InvitationResponse.builder().message("Already exists as user").isSuccess(false).build();
+            return VerifyResponse.builder().message("Already exists as user").isSuccess(false).build();
         var invitation_reserved = invitationRepository.findByEmail(email);
         if(invitation_reserved.isPresent())
-            return InvitationResponse.builder().message("Go ahead").isSuccess(true).build();
-        return InvitationResponse.builder().message("Unreserved").isSuccess(false).build();
+            return VerifyResponse.builder().message("Go ahead").isSuccess(true).build();
+        return VerifyResponse.builder().message("Unreserved").isSuccess(false).build();
+    }
+
+    public VerifyResponse verifyExistsUsername(String username) {
+        var user = userRepo.findByUsername(username);
+        if(user.isPresent())
+            return VerifyResponse.builder().message("Username already exists as").isSuccess(false).build();
+        return VerifyResponse.builder().message("Go ahead").isSuccess(true).build();
     }
 }

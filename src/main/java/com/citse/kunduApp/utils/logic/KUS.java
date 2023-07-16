@@ -10,6 +10,7 @@ import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 @Service
 public class KUS implements KunduUtilitiesService {
@@ -44,6 +45,13 @@ public class KUS implements KunduUtilitiesService {
                 .body(data)
                 .status(status.name())
                 .build();
+    }
+
+    @Override
+    public String SecureCode(String acronym) {
+        Random random = new Random();
+        return acronym+getCurrentYear()+"-"+random.nextInt(999)+
+                "-"+random.nextInt(999)+"-"+random.nextInt(9999);
     }
 
     private static String getCurrentYear() {

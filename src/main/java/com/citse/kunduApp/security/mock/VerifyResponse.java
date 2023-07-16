@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class InvitationResponse {
+public class VerifyResponse {
     private String message;
     private boolean isSuccess;
 }

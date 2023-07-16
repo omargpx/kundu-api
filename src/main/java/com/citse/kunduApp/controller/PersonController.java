@@ -1,10 +1,13 @@
 package com.citse.kunduApp.controller;
 
+import com.citse.kunduApp.exceptions.KunduException;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.contracts.PersonService;
 import com.citse.kunduApp.utils.models.Services;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,11 +30,16 @@ public class PersonController {
     @GetMapping
     public ResponseEntity<?> getAll(@RequestParam(name = "id",required = false)Integer id,
                                     @RequestParam(name = "code",required = false)String code,
+                                    @RequestParam(name = "page",required = false)Integer page,
                                     HttpServletRequest request){
         if(null!=id)
-            return ResponseEntity.ok(kus.getResponse(request,origin,service.getById(id), HttpStatus.OK));
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getById(id),HttpStatus.OK));
         if(null!=code)
-            return ResponseEntity.ok(kus.getResponse(request,origin,service.findByKunduCode(code), HttpStatus.OK));
-        return ResponseEntity.ok(kus.getResponse(request,origin,service.getAll(),HttpStatus.OK));
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.findByKunduCode(code),HttpStatus.OK));
+        if(null!=page){
+            Pageable pageable = PageRequest.of(page,50);
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getPeoplePages(pageable),HttpStatus.OK));
+        }
+        throw new KunduException(origin,"Kundu-api at your command",HttpStatus.PARTIAL_CONTENT);
     }
 }
