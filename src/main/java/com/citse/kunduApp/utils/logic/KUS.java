@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -16,6 +17,13 @@ import java.util.Random;
 public class KUS implements KunduUtilitiesService {
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ012345678987654321abcdefghijklmnñopqrstuvxyz";
     private static final SecureRandom sr = new SecureRandom();
+    private final Random random  = SecureRandom.getInstanceStrong();
+
+    public KUS() throws NoSuchAlgorithmException {
+        // an exception is raised to keep the random number generation highly strong
+        throw new UnsupportedOperationException();
+    }
+
 
     @Override
     public String KunduCode(String acronym) {
@@ -49,7 +57,6 @@ public class KUS implements KunduUtilitiesService {
 
     @Override
     public String SecureCode(String acronym) {
-        Random random = new Random();
         return acronym+getCurrentYear()+"-"+random.nextInt(999)+
                 "-"+random.nextInt(999)+"-"+random.nextInt(9999);
     }
