@@ -1,6 +1,7 @@
 package com.citse.kunduApp.entity;
 
 import com.citse.kunduApp.security.mock.Invitation;
+import com.citse.kunduApp.security.token.Token;
 import com.citse.kunduApp.utils.models.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -12,6 +13,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -41,16 +43,20 @@ public class User implements UserDetails {
     private LocalDateTime lastConnect;
 
     @JsonIgnore
-    @OneToOne(mappedBy = "user", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "userDetail", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
     private Person person;
 
     @JsonIgnore
     @OneToMany(mappedBy = "userReserve")
     private List<Invitation> invitations;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "user")
+    private List<Token> tokens;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority(role.name()));
+        return role.getAuthorities();
     }
 
     @Override

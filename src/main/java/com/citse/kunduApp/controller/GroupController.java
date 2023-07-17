@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -34,6 +35,7 @@ public class GroupController {
     }
 
     @PostMapping
+    @PreAuthorize("hasAuthority('admin:create')")
     public ResponseEntity<?> save(@RequestBody Group group,HttpServletRequest request){
         return ResponseEntity.ok(kus.getResponse(request,origin,service.save(group),HttpStatus.OK));
     }

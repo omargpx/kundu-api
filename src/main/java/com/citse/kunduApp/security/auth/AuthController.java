@@ -5,6 +5,7 @@ import com.citse.kunduApp.utils.models.Services;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +19,7 @@ public class AuthController {
 
     private final AuthenticationService service;
     private final KunduUtilitiesService kus;
+    private final AuthenticationService authService;
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request){
@@ -42,4 +44,9 @@ public class AuthController {
         return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyAccountInvitation(email),HttpStatus.OK));
     }
 
+    @GetMapping("/existsUsername")
+    public ResponseEntity<?> verifyExistsUser(@RequestParam(name = "username")String username,
+                                              HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), authService.verifyExistsUsername(username),HttpStatus.OK));
+    }
 }

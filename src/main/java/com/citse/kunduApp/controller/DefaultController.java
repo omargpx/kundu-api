@@ -1,9 +1,7 @@
 package com.citse.kunduApp.controller;
 
-import com.citse.kunduApp.security.auth.AuthenticationService;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.models.AInformation;
-import com.citse.kunduApp.utils.models.Services;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -11,9 +9,7 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -27,8 +23,7 @@ public class DefaultController {
     @Autowired
     private KunduUtilitiesService kus;
     private final ResourceLoader resourceLoader;
-    @Autowired
-    private AuthenticationService authService;
+
 
     public DefaultController(ResourceLoader resource) {
         this.resourceLoader = resource;
@@ -60,9 +55,4 @@ public class DefaultController {
         return new ResponseEntity<>(jsonContent, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "api/kus/existsUsername")
-    public ResponseEntity<?> verifyExistsUser(@RequestParam(name = "username")String username,
-                                              HttpServletRequest request){
-        return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), authService.verifyExistsUsername(username),HttpStatus.OK));
-    }
 }

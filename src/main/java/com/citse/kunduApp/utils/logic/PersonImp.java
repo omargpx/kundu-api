@@ -5,8 +5,6 @@ import com.citse.kunduApp.exceptions.KunduException;
 import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.utils.contracts.PersonService;
 import com.citse.kunduApp.utils.models.Services;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
@@ -18,8 +16,6 @@ import java.util.List;
 
 @Service
 public class PersonImp implements PersonService {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(PersonImp.class);
 
     @Autowired
     private PersonDao repo;
@@ -59,10 +55,9 @@ public class PersonImp implements PersonService {
         throw new KunduException(Services.PERSON_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND);
     }
 
-    @Cacheable(value = "getPeoplePages")
+    @Cacheable(value = "getPeopleByPage")
     @Override
     public Page<Person> getPeoplePages(Pageable pageable) {
-        LOGGER.debug("Querying person by page: {}", pageable.getPageNumber());
         return repo.findAll(pageable);
     }
 }

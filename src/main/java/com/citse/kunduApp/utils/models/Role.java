@@ -14,18 +14,12 @@ import static com.citse.kunduApp.utils.models.Permission.*;
 @RequiredArgsConstructor
 public enum Role {
 
-    USER(
-            Set.of(
-                    USER_READ,
-                    USER_UPDATE,
-                    USER_CREATE
-            )
-    ),
+    USER(Collections.emptySet()),
     TUTOR(
             Set.of(
                     USER_READ,
-                    USER_UPDATE,
-                    USER_CREATE,
+                    TUTOR_UPDATE,
+                    TUTOR_CREATE,
                     TUTOR_DELETE
             )
     ),
@@ -37,7 +31,15 @@ public enum Role {
                     ADMIN_CREATE
             )
     ),
-    DEVELOPER(Collections.emptySet())
+    DEVELOPER(
+            Set.of(
+                    ADMIN_READ,
+                    ADMIN_UPDATE,
+                    ADMIN_DELETE,
+                    ADMIN_CREATE,
+                    TUTOR_DELETE
+            )
+    )
 
     ;
 
@@ -45,11 +47,10 @@ public enum Role {
     private final Set<Permission> permissions;
 
     public List<SimpleGrantedAuthority> getAuthorities() {
-        var authorities = getPermissions()
+
+        return getPermissions()
                 .stream()
                 .map(permission -> new SimpleGrantedAuthority(permission.getPermission()))
                 .collect(Collectors.toList());
-        authorities.add(new SimpleGrantedAuthority("ROLE_" + this.name()));
-        return authorities;
     }
 }

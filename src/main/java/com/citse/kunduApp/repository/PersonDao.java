@@ -11,8 +11,9 @@ import java.util.Optional;
 @Repository
 public interface PersonDao extends JpaRepository<Person,Integer> {
     Person findByKunduCode(String kunduCode);
-    @Query("SELECT p FROM Person p JOIN p.user u WHERE u.username = :username")
+    @Query("SELECT p FROM Person p JOIN p.userDetail u WHERE u.username = :username")
     Person findPersonByUsername(@Param("username") String username);
 
+    Optional<Person> findByPhone(String phone);
 
 }

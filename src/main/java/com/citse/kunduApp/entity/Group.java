@@ -51,6 +51,7 @@ public class Group implements Serializable {
     @JoinColumn(name = "fk_entity_id")
     private Entities gEntity;
 
+    @JsonIgnoreProperties({"group","userDetail","biography"})
     @OneToMany(mappedBy = "group")
     private List<Member> members;
 }

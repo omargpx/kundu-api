@@ -74,7 +74,9 @@ public class GroupImp implements GroupService {
         Group group = getByCode(code);
         if(group==null || person==null)
             throw new KunduException(Services.GROUP_SERVICE.name(),"the code is wrong", HttpStatus.NOT_FOUND);
-
+        var verifyMember = memberRepo.findByPerson(person);
+        if(verifyMember.isPresent())
+            throw new KunduException(Services.GROUP_SERVICE.name(), "Member already exists", HttpStatus.BAD_REQUEST);
         memberRepo.save(Member.builder().
                 person(person).
                 group(group).

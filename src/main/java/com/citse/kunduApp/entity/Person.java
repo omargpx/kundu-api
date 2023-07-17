@@ -44,7 +44,7 @@ public class Person implements Serializable {
             "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})
     @OneToOne
     @JoinColumn(name = "fk_user_id")
-    private User user;
+    private User userDetail;
 
     @JsonIgnore
     @OneToMany(mappedBy = "follower")

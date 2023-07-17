@@ -1,7 +1,8 @@
 spring:
-  redis:
-    host: localhost
-    port: 6379
+  data:
+    redis:
+      repositories:
+        enabled: false
   datasource:
     url: jdbc:mysql://localhost:3306/dbo_kundu
     username: kundu
@@ -16,6 +17,11 @@ spring:
         dialect: org.hibernate.dialect.MySQL57Dialect
         format_sql: true
       database: mysql
+  cache:
+    type: redis
+  redis:
+    host: localhost
+    port: 6379
 application:
   security:
     jwt:
@@ -23,3 +29,6 @@ application:
       expiration: 86400000 # a day
       refresh-token:
         expiration: 604800000 # 7 days
+
+server:
+  port: 8080

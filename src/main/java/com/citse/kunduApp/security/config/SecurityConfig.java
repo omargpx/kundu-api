@@ -13,9 +13,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 
-import static com.citse.kunduApp.utils.models.Permission.*;
 import static com.citse.kunduApp.utils.models.Role.*;
-import static org.springframework.http.HttpMethod.DELETE;
 
 @Configuration
 @EnableWebSecurity
@@ -39,9 +37,7 @@ public class SecurityConfig {
                 .permitAll()
 
                 //endpoint protect, only access for role permission
-                .requestMatchers("/api/management/**").hasAnyRole(ADMIN.name())
-
-                .requestMatchers(DELETE, "/api/members/**").hasAuthority(TUTOR_DELETE.name())
+                .requestMatchers("/api/management/**").hasAnyRole(ADMIN.name(), DEVELOPER.name())
                 // protect endpoints in test, only accessible for developer user
                 .anyRequest()
                 .authenticated()
