@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Primary",
+    "description": " ",
+    "HEX": "#FAAE2B"
+  },
+  {
+    "name": "Secondary",
+    "description": " ",
+    "HEX": "#198FF5"
+  },
+  {
+    "name": "Help[0]",
+    "description": " ",
+    "HEX": "#3BBCA9"
+  },
+  {
+    "name": "Help[1]",
+    "description": " ",
+    "HEX": "#DC414C"
+  },
+  {
+    "name": "Blue-300",
+    "description": " ",
+    "HEX": "#1E202A"
+  },
+  {
+    "name": "Blue-200",
+    "description": " ",
+    "HEX": "#252A40"
+  },
+  {
+    "name": "Blue-100",
+    "description": " ",
+    "HEX": "#343B56"
+  },
+  {
+    "name": "Blue-50",
+    "description": " ",
+    "HEX": "#8B97C6"
+  },
+  {
+    "name": "White-300",
+    "description": " ",
+    "HEX": "#F1F1F1"
+  },
+  {
+    "name": "White-200",
+    "description": " ",
+    "HEX": "#E5E7EE"
+  },
+  {
+    "name": "White-100",
+    "description": " ",
+    "HEX": "#E0E4F0"
+  },
+  {
+    "name": "White-50",
+    "description": " ",
+    "HEX": "#63677E"
+  },
+]

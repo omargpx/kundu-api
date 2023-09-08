@@ -41,7 +41,7 @@ public class Entities implements Serializable {
     @JoinColumn(name = "fk_father_id",referencedColumnName = "id_entity")
     private Entities father;
 
-    @JsonIgnoreProperties({"entity"})
+    @JsonIgnore
     @OneToMany(mappedBy = "entity")
     private List<Event> events;
 

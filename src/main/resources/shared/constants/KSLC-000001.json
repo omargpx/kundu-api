@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué creó Dios en el primer día de la creación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Los árboles y las plantas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Las aves y los animales terrestres",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La luz y la separación entre la luz y las tinieblas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Los océanos y los ríos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Dios en el segundo día de la creación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Creó los árboles y las plantas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Separó las aguas y creó el cielo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Creó los animales acuáticos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Formó a los seres humanos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hizo Dios en el tercer día de la creación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Creó las aves y los animales terrestres",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Separó la luz de las tinieblas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Separó las aguas y creó la tierra con árboles y plantas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Creó los cuerpos celestes como el sol y la luna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué creó Dios en el cuarto día de la creación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Los animales acuáticos y terrestres",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Los seres humanos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Las aves y los cuerpos celestes como el sol y la luna",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Las plantas y los árboles",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué creó Dios en el quinto día de la creación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Los árboles y las plantas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Las aves y los animales terrestres",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Los océanos y los ríos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los cuerpos celestes como el sol y la luna",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cómo intentó Dios comunicar su mensaje a Faraón?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Enviando ángeles mensajeros",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A través de sueños y visiones",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Mediante Moisés y Aarón",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Enviando mensajes escritos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Moisés para demostrar el poder de Dios ante Faraón?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Convirtió el agua en vino",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hizo llover maná del cielo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Transformó su vara en una serpiente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Convirtió el río Nilo en sangre",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo reaccionó Faraón ante las primeras plagas que Dios envió?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se humilló y obedeció a Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Aceptó la liberación de los israelitas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Rechazó la voz de Dios y no obedeció",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Pidó perdón y se arrepintió",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué plaga final advirtió Moisés que afectaría a Egipto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Una plaga de langostas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Una plaga de lluvia de fuego",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La muerte de cada primogénito",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Una plaga de terremotos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál fue el resultado final de la negativa de Faraón a obedecer la palabra de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Faraón se convirtió en creyente",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Los israelitas fueron atacados por las plagas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Los primogénitos egipcios murieron",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Faraón se convirtió en líder de Israel",
+        "correct": false
+      }
+    ]
+  }
+]

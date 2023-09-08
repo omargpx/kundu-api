@@ -1,8 +1,12 @@
 package com.citse.kunduApp.security.config;
 
+import com.citse.kunduApp.exceptions.AuthJWTResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -38,7 +42,7 @@ public class SecurityConfig {
 
                 //endpoint protect, only access for role permission
                 .requestMatchers("/api/management/**").hasAnyRole(ADMIN.name(), DEVELOPER.name())
-                // protect endpoints in test, only accessible for developer user
+                // --
                 .anyRequest()
                 .authenticated()
                 .and().sessionManagement()
@@ -50,6 +54,14 @@ public class SecurityConfig {
                 .logoutUrl("/api/auth/logout")
                 .addLogoutHandler(logoutHandler)
                 .logoutSuccessHandler((request, response, authentication) -> SecurityContextHolder.clearContext());
+                http.exceptionHandling()
+                .authenticationEntryPoint((request, response, authException) -> {
+                    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                    response.setContentType("application/json");
+                    ObjectMapper objMapper = new ObjectMapper();
+                    var JWTError = new AuthJWTResponse(request.getRequestURI(),"You are not authorized to access this resource", HttpStatus.UNAUTHORIZED.value());
+                    response.getWriter().write(objMapper.writeValueAsString(JWTError));
+                });;
         return http.build();
     }
 }

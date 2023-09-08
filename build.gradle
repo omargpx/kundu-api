@@ -42,8 +42,8 @@ sonar {
 	properties {
 		property "sonar.projectKey", "kunduApi"
 		property "sonar.organization", "kunduApi "
-		property "sonar.host.url", "localhost:9000"
-		property "sonar.token", "sqp_5b39dfc4913aa55ec45f27b274c53a418a32f1b0"
+		property "sonar.host.url", "http://localhost:9000"
+		property "sonar.token", "sqp_10aec0f12dc77a9fcafdf85e3b226a18cee8edec"
 	}
 }
 

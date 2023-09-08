@@ -25,7 +25,7 @@ public class Person implements Serializable {
     private Integer id;
     @Column(name = "no_person", nullable = false)
     private String name;
-    @Column(name = "nu_phone")
+    @Column(name = "nu_phone",nullable = false, unique = true)
     private String phone;
     @Column(name = "url_avatar", nullable = false)
     private String avatar;
@@ -40,7 +40,7 @@ public class Person implements Serializable {
     @Column(name = "fe_join_to_kundu")
     private LocalDate joinDate;
 
-    @JsonIgnoreProperties({"person","invitations","secure","email","password","enabled",
+    @JsonIgnoreProperties({"person","secure","password","enabled",
             "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})
     @OneToOne
     @JoinColumn(name = "fk_user_id")
@@ -54,7 +54,7 @@ public class Person implements Serializable {
     @OneToMany(mappedBy = "followed")
     private List<Follow> following;
 
-    @JsonIgnoreProperties({"person"})
+    @JsonIgnoreProperties({"person","gentity"})
     @OneToOne(mappedBy = "person", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
     private Member member;
 

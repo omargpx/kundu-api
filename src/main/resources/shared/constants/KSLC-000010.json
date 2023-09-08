@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué nombre le puso la princesa al bebé que encontró en el río?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Abraham",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Isaac",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Moisés",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. Jacob",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué significado tiene el nombre 'Moisés'?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Elegido por Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Hijo de la princesa",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Sacado de las aguas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. Guerrero valiente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué suceso ocurrió cuando Moisés estaba apacentando las ovejas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Encontró un tesoro",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Vio una zarza en llamas",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "C. Se perdió en el desierto",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "D. Fue atacado por un león",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le dijo Dios a Moisés desde la zarza en llamas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Que debía construir un templo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Que debía huir del desierto",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Que debía quitar sus sandalias",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. Que debía adorar a otros dioses",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Moisés tuvo que huir del palacio?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Porque no le gustaba la vida de lujo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Porque se metió en una pelea",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Porque el faraón ya no lo quería",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. Porque quería explorar el desierto",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué significado tenía el acto de sacrificar un cordero en la enseñanza de Adán y Eva a sus hijos?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Representaba la obediencia a los padres",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Simbolizaba el deseo de Dios de recibir ofrendas materiales",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Prefiguraba el sacrificio futuro de Jesús por los pecados",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Era una forma de demostrar el éxito en la agricultura y ganadería",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué reacción tuvo Dios hacia las ofrendas de Caín y Abel?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Aceptó ambas ofrendas por igual",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Rechazó la ofrenda de Abel pero aceptó la de Caín",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Aceptó la ofrenda de Abel y rechazó la de Caín",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No mostró ninguna reacción hacia las ofrendas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué se enojó Caín cuando Dios no aceptó su ofrenda?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Abel había traído una ofrenda más grande",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Dios favoreció a Abel injustamente",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque entendió que su ofrenda no era sincera",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque su orgullo y envidia le impidieron aceptar la corrección de Dios",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo respondió Caín cuando Dios le preguntó por su hermano Abel?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Confesó su culpa y pidió perdón",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dijo que Abel se había ido de viaje",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Expresó arrepentimiento y buscó reconciliación",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Mostró indiferencia y negó su responsabilidad",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál fue el triste desenlace de la historia de Caín y Abel?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Caín se arrepintió y buscó restaurar su relación con Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Abel perdonó a Caín y juntos repararon su relación",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Caín mató a Abel debido a su enojo y orgullo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dios intervino y castigó a ambos hermanos por igual",
+        "correct": false
+      }
+    ]
+  }
+]

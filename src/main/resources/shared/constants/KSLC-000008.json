@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué nombre le pusieron al primer bebé que nació de Rebeca?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Esaú",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Jacob",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Abraham",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué significado tiene el nombre 'Jacob'?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Velludo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Planta del pie",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Suplantador",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Valiente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué Esaú amaba cazar animales?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque le gustaba cuidar de las ovejas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque le gustaba ayudar en las tareas del hogar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque disfrutaba de las comidas que preparaba con los animales cazados",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque prefería cocinar platos con lentejas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué beneficio tenía ser el primogénito en esa época?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Recibir más riquezas",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Ser el cazador principal",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Ser el más valiente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Ser el cocinero del hogar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo Jacob para que Esaú compartiera su comida?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Le ofreció su primogenitura",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Le ofreció un regalo valioso",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le prometió hacer todas las tareas del hogar por un mes",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le ofreció un plato de lentejas",
+        "correct": false
+      }
+    ]
+  }
+]

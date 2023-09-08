@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hizo Dios en el sexto día de la creación?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Creó a los elefantes y jirafas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Creó a Adán y Eva",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Creó a los leones y tigres",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Creó el árbol del conocimiento",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo creó Dios a Adán?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Con polvo de la tierra y aliento de vida",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Con agua y fuego",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Con rayos y truenos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Con luz y oscuridad",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo se llamaba la primera mujer que Dios creó?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Sara",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Ruth",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Eva",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "María",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué trabajo especial le dio Dios al hombre?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Cuidar los peces del mar",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cazar animales salvajes",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Labrar la tierra y poner nombre a los animales",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Construir una casa en el árbol",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué indicación importante dio Dios a Adán y Eva?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Poner nombre a todos los árboles del huerto",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "No acercarse al árbol de los animales",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Comer de todos los árboles excepto uno",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Buscar tesoros escondidos en el huerto",
+        "correct": false
+      }
+    ]
+  }
+]

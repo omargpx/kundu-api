@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hicieron los israelitas mientras esperaban a Moisés en el monte Sinaí?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Construyeron un altar para adorar a Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Buscaban zarcillos y aretes de oro.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pidieron a Aarón que hiciera un dios para adorar.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Cantaron y danzaron en honor a Moisés.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Aarón en respuesta a la petición del pueblo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Construyó un becerro de oro para adorar.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Construyó un altar para ofrecer sacrificios a Dios.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Convocó a una reunión para hablar sobre la situación.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Rechazó la solicitud del pueblo y los reprendió.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál fue la reacción del pueblo al ver el becerro de oro?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se arrepintieron y pidieron perdón a Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Continuaron esperando a Moisés pacientemente.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se olvidaron de las maravillas de Dios y adoraron al becerro.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Decidieron buscar a Moisés en el monte Sinaí.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionó Moisés al ver lo que había sucedido con el pueblo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se unió a la celebración y danzó con ellos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Rompió las tablas de la ley en enojo.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Reprendió a Aarón por su debilidad.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Organizó un sacrificio para el becerro de oro.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo respondió Aarón cuando Moisés le reclamó sobre el becerro de oro?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Reconoció su error y pidió perdón.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dijo que fue la idea de Moisés construir el becerro.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Afirmó que lo hizo porque el pueblo se lo pidió.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Negó haber estado involucrado en la construcción.",
+        "correct": false
+      }
+    ]
+  }
+]

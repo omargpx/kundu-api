@@ -5,4 +5,6 @@ public enum Services {
     AUTH_SERVICE,
     INVITATION_SERVICE,
     GROUP_SERVICE,
+    LIBRARY_SERVICE,
+    EVENT_SERVICE
 }

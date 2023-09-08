@@ -47,7 +47,6 @@ public class DefaultController {
         String jsonContent = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
         return new ResponseEntity<>(jsonContent, HttpStatus.PARTIAL_CONTENT);
     }
-
     @RequestMapping(value = "/avatars",produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> handleShowAvatars(HttpServletRequest request) throws IOException {
         Resource resource = resourceLoader.getResource("classpath:/shared/avatars.json");

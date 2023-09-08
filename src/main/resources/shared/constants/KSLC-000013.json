@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué observaste en la imagen?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Basura tirada por los suelos",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Personas felices",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Edificios altos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Animales jugando",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué debería suceder para que haya orden y limpieza?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que las personas tiren más basura",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que las personas sigan las reglas y no tiren basura en la calle",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Que las personas construyan más edificios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que las personas no salgan a la calle",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué pasa cuando no se siguen las reglas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Todo se vuelve aburrido",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se crea un ambiente ordenado",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Puede haber caos y desorden",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Las reglas cambian automáticamente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Para qué sirven las reglas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Para hacer las cosas más difíciles",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Para controlar a las personas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Para mantener el orden, la seguridad y la convivencia pacífica",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Para generar más basura",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Te has puesto a pensar qué pasaría si los autos no siguieran las reglas de tránsito?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No pasaría nada",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Habría menos accidentes y todo sería más seguro",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Los autos volarían",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los autos se convertirían en barcos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "¿Qué pasaría si los niños no siguieran las reglas del hogar o la escuela?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Los adultos no tendrían trabajo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Los niños serían más felices",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Habría un ambiente de desorden y falta de respeto",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Los niños se convertirían en superhéroes",
+        "correct": false
+      }
+    ]
+  }
+]

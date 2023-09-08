@@ -21,7 +21,6 @@ public class KUS implements KunduUtilitiesService {
 
     public KUS() throws NoSuchAlgorithmException {
         // an exception is raised to keep the random number generation highly strong
-        throw new UnsupportedOperationException();
     }
 
 

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Dónde vivía el hombre del que habla el texto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "En una tierra llamada Canaán.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "En una tierra llamada Ur.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "En una tierra llamada Babilonia.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "En una tierra llamada Egipto.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué relación tenía el hombre con su familia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Vivía lejos de su familia.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Vivía cerca de su familia.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "No tenía familia.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se había peleado con su familia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué Dios le pidió a Abraham que dejara su tierra y su familia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque no le gustaba la familia de Abraham.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Para castigar a Abraham.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Para bendecirlo aún más.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Dios no quería a Abraham cerca.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Abraham en los lugares donde se detenía?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Construía un castillo.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Construía un templo a los ídolos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Hacía un altar y adoraba a Dios.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No hacía nada especial.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Abraham es conocido como el 'Padre de la fe'?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque tuvo muchos hijos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque construyó una gran ciudad.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque aceptó la palabra de Dios y confió en Él.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque era muy rico y poderoso.",
+        "correct": false
+      }
+    ]
+  }
+]

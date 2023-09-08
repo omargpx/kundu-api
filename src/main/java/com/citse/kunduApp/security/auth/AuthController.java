@@ -19,7 +19,6 @@ public class AuthController {
 
     private final AuthenticationService service;
     private final KunduUtilitiesService kus;
-    private final AuthenticationService authService;
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request){
@@ -44,9 +43,14 @@ public class AuthController {
         return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyAccountInvitation(email),HttpStatus.OK));
     }
 
-    @GetMapping("/existsUsername")
-    public ResponseEntity<?> verifyExistsUser(@RequestParam(name = "username")String username,
+    @GetMapping("/exists")
+    public ResponseEntity<?> verifyExistsUser(@RequestParam(name = "username",required = false)String username,
+                                              @RequestParam(name = "phone",required = false)String phone,
                                               HttpServletRequest request){
-        return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), authService.verifyExistsUsername(username),HttpStatus.OK));
+        if(null!=username)
+            return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyExistsUsername(username),HttpStatus.OK));
+        if(null!=phone)
+            return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), service.verifyExistsPhoneNumber(phone),HttpStatus.OK));
+        return ResponseEntity.ok(kus.getResponse(request, Services.AUTH_SERVICE.name(), "Choose an option",HttpStatus.PARTIAL_CONTENT));
     }
 }

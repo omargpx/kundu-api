@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué nombre recibió el personaje principal de la historia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "José",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Israel",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Jacob",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Gosén",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué motivo los hermanos de José le tenían envidia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque era el hijo mayor",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque tenía una túnica de colores",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque era el más fuerte de los hermanos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque era el más sabio de los hermanos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué rol tuvo José cuando fue llevado a Egipto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Esclavo de un oficial del faraón",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Cocinero en el palacio real",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Granjero en las tierras egipcias",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Artesano en una ciudad egipcia",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Por qué fue José enviado a la cárcel en Egipto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Por robar comida",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Por desobedecer al faraón",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Por causa de la esposa de Potifar",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Por intentar escapar de Egipto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo José cuando finalmente tuvo poder en Egipto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se vengó de sus hermanos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Ayudó al pueblo egipcio a administrar durante la escasez de alimentos",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se convirtió en un comerciante exitoso",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Abandonó Egipto y regresó a su tierra natal",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hizo Noé cuando escuchó a Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se quedó escuchando sin hacer nada.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Actuó según lo que Dios le mandó.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Ignoró completamente a Dios.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le pidió a Dios más indicaciones.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué caracterizaba a la gente en la época de Noé?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Eran todos obedientes y justos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Eran violentos y corruptos.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Eran bondadosos y generosos.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Eran todos sabios y amorosos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué distinguió a Noé entre su familia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Era el más rico de su familia.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Era el más sabio de su familia.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Encontró gracia ante los ojos de Dios por ser justo y obediente.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Era el más joven de su familia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le pidió Dios a Noé que construyera?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Un templo de piedra.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Un arca de madera.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Un castillo fortificado.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un puente sobre el río.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Noé confiaba en la palabra de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque no tenía otra opción.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque sus padres se lo dijeron.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque había pasado tiempo con Dios y llegó a conocerlo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque le prometieron muchas recompensas.",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -33,7 +33,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-@RequiredArgsConstructor
+    @RequiredArgsConstructor
 public class AuthenticationService {
 
     private final UserDao userRepo;
@@ -165,5 +165,12 @@ public class AuthenticationService {
         var verifyPhoneNumber = personRepo.findByPhone(phone);
         if(verifyUserEmail.isPresent() || verifyPhoneNumber.isPresent())
             throw new KunduException(Services.AUTH_SERVICE.name(),"User already exists", HttpStatus.BAD_REQUEST);
+    }
+
+    public VerifyResponse verifyExistsPhoneNumber(String phone) {
+        var verified = personRepo.findByPhone(phone);
+        if (verified.isPresent())
+            return VerifyResponse.builder().message("Phone number already in use").isSuccess(false).build();
+        return VerifyResponse.builder().message("Go ahead").isSuccess(true).build();
     }
 }

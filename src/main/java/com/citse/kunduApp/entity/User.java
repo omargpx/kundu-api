@@ -4,6 +4,7 @@ import com.citse.kunduApp.security.mock.Invitation;
 import com.citse.kunduApp.security.token.Token;
 import com.citse.kunduApp.utils.models.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -46,9 +47,12 @@ public class User implements UserDetails {
     @OneToOne(mappedBy = "userDetail", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
     private Person person;
 
-    @JsonIgnore
+    @JsonIgnoreProperties({"userReserve"})
     @OneToMany(mappedBy = "userReserve")
     private List<Invitation> invitations;
+
+    @Transient
+    private List<Object> guests;
 
     @JsonIgnore
     @OneToMany(mappedBy = "user")

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué significa 'caminar con Dios' según el texto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Hablar con Dios solo en momentos difíciles",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hacer siempre lo que uno quiere sin importar las consecuencias",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pasas tiempo con Dios, obedeces su palabra y compartes su mensaje",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Estar siempre en un lugar religioso",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Enoc para ser diferente de las personas a su alrededor?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Pasaba todo el tiempo en su casa",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hacía travesuras y se reía de los demás",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pasaba tiempo con Dios, obedecía sus palabras y compartía su mensaje",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Ignoraba por completo a las demás personas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué Enoc decidió pasar tiempo con Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque quería ser famoso",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque estaba aburrido de su vida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque amaba la compañía de Dios y quería ser su mejor amigo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque le obligaban a hacerlo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo describirías la relación entre Enoc y Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Enoc y Dios eran enemigos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Enoc solo hablaba con Dios en momentos difíciles",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Enoc pasaba tiempo con Dios, compartía con él y lo obedecía",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Enoc solo rezaba a Dios cuando estaba feliz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué premio recibió Enoc por su relación con Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Recibió un tesoro muy valioso",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Recibió poderes mágicos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dios lo invitó a vivir en su casa",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Recibió muchas riquezas materiales",
+        "correct": false
+      }
+    ]
+  }
+]

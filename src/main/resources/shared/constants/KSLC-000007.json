@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué significado tiene el nombre 'Isaac'?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Alegría",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Risa",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Amor",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Paz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Abraham y Sara esperaban con tanto anhelo a Isaac?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Isaac sería el más poderoso de todos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Isaac sería el hijo de Dios",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque Dios les prometió que Sara sería madre",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Isaac sería un profeta famoso",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué se llamó 'Isaac' al hijo de Abraham y Sara?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque era el nombre favorito de Abraham",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque significa 'paz' en hebreo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque significa 'risa' y trajo alegría al hogar",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque era el nombre del abuelo de Abraham",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionó Isaac cuando Dios le pidió a Abraham que lo sacrificara?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaac huyó y se escondió",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Isaac luchó y se resistió",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Isaac se dejó ser atado para el sacrificio",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Isaac lloró y se quejó",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Abraham decidió que Isaac debía casarse?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Abraham no quería estar solo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Isaac le pidió que lo hiciera",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque quería una esposa que amara a Dios para Isaac",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Isaac ya estaba enamorado de alguien",
+        "correct": false
+      }
+    ]
+  }
+]

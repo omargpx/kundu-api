@@ -1,6 +1,8 @@
 package com.citse.kunduApp.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -38,7 +40,7 @@ public class Group implements Serializable {
     @Column(name = "url_image",nullable = false)
     private String image;
     @Column(name = "nu_phase")
-    private int phase;
+    private Integer phase;
     @Column(name = "nu_tier")
     private int level;
     @Column(name = "nu_points")
@@ -51,7 +53,11 @@ public class Group implements Serializable {
     @JoinColumn(name = "fk_entity_id")
     private Entities gEntity;
 
-    @JsonIgnoreProperties({"group","userDetail","biography"})
+    @JsonIgnoreProperties({"group","biography"})
     @OneToMany(mappedBy = "group")
     private List<Member> members;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "groupSession")
+    private List<Session> sessions;
 }

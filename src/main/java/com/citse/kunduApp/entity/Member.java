@@ -25,7 +25,7 @@ public class Member implements Serializable {
     @Column(name = "fe_instance")
     private LocalDate dateJoin;
 
-    @JsonIgnoreProperties({"user","member","following","followers"})
+    @JsonIgnoreProperties({"userDetail","member","following","followers"})
     @OneToOne
     @JoinColumn(name = "fk_person_id")
     private Person person;
