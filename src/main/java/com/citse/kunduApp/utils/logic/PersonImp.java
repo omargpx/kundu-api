@@ -53,8 +53,8 @@ public class PersonImp implements PersonService {
                     guests.add(p);
                 }
             });
+            Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         }
-        Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         return person;
     }
 
@@ -96,8 +96,8 @@ public class PersonImp implements PersonService {
                     guests.add(p);
                 }
             });
+            Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         }
-        Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         return person;
     }
 

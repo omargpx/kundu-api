@@ -44,14 +44,15 @@ public class User implements UserDetails {
     private LocalDateTime lastConnect;
 
     @JsonIgnore
-    @OneToOne(mappedBy = "userDetail", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @OneToOne(mappedBy = "userDetail", cascade = CascadeType.MERGE)
     private Person person;
 
     @JsonIgnoreProperties({"userReserve"})
-    @OneToMany(mappedBy = "userReserve")
+    @OneToMany(mappedBy = "userReserve", fetch = FetchType.EAGER)
     private List<Invitation> invitations;
 
     @Transient
+    @JsonIgnoreProperties({"member", "userDetail"})
     private List<Object> guests;
 
     @JsonIgnore

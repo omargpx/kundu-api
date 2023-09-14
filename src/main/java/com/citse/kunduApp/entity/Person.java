@@ -42,7 +42,7 @@ public class Person implements Serializable {
 
     @JsonIgnoreProperties({"person","secure","password","enabled",
             "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_user_id")
     private User userDetail;
 
@@ -54,8 +54,8 @@ public class Person implements Serializable {
     @OneToMany(mappedBy = "followed")
     private List<Follow> following;
 
-    @JsonIgnoreProperties({"person","gentity"})
-    @OneToOne(mappedBy = "person", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"person"})
+    @OneToOne(mappedBy = "person", cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     private Member member;
 
 }

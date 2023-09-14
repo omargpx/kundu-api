@@ -22,7 +22,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +36,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-    @RequiredArgsConstructor
+@RequiredArgsConstructor
 public class AuthenticationService {
 
     private final UserDao userRepo;
@@ -71,29 +74,33 @@ public class AuthenticationService {
         Map<String,Object> additionalInfo = new HashMap<>();
         additionalInfo.put("KunduCode",person.getKunduCode());
         var jwtToken = jwtService.generateToken(additionalInfo,user);
-        var refreshToken = jwtService.generateRefreshToken(user);
         saveUserToken(savedUser,jwtToken);
-        return AuthenticationResponse.builder().accessToken(jwtToken).refreshToken(refreshToken).build();
+        return AuthenticationResponse.builder().accessToken(jwtToken).build();
     }
 
     public AuthenticationResponse authenticate(AuthenticationRequest request) {
-        authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        request.getUsername(),
-                        request.getPassword()
-                )
-        );
-        var user = userRepo.findByUsername(request.getUsername()).orElseThrow();
-        var person = personRepo.findPersonByUsername(user.getUsername());
-        Map<String,Object> additionalInfo = new HashMap<>();
-        additionalInfo.put("KunduCode",person.getKunduCode());
-        var jwtToken = jwtService.generateToken(additionalInfo,user);
-        var refreshToken = jwtService.generateRefreshToken(user);
-        revokeAllUserTokens(user);
-        saveUserToken(user,jwtToken);
-        return AuthenticationResponse.builder().accessToken(jwtToken).refreshToken(refreshToken).build();
+        try {
+            authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            request.getUsername(),
+                            request.getPassword()
+                    )
+            );
+            var user = userRepo.findByUsername(request.getUsername()).orElseThrow(() -> new UsernameNotFoundException("User not found"));
+            var jwtToken = jwtService.generateToken(getAdditionalInfoToken(request.getUsername()),user);
+            tokenRepo.deleteTokensByUserId(user.getId());
+            saveUserToken(user,jwtToken);
+            return AuthenticationResponse.builder().accessToken(jwtToken).build();
+        }catch (AuthenticationException e){
+            throw new BadCredentialsException("Bad credentials", e);
+        }
     }
-
+    private Map<String,Object> getAdditionalInfoToken(String username){
+        Map<String,Object> additionalInfo = new HashMap<>();
+        var person = personRepo.findPersonByUsername(username);
+        additionalInfo.put("KunduCode",person.getKunduCode());
+        return additionalInfo;
+    }
     private void saveUserToken(User user, String jwtToken) {
         var token = Token.builder()
                 .user(user)
@@ -103,16 +110,6 @@ public class AuthenticationService {
                 .revoked(false)
                 .build();
         tokenRepo.save(token);
-    }
-    private void revokeAllUserTokens(User user) {
-        var validUserTokens = tokenRepo.findAllValidTokenByUser(user.getId());
-        if (validUserTokens.isEmpty())
-            return;
-        validUserTokens.forEach(token -> {
-            token.setExpired(true);
-            token.setRevoked(true);
-        });
-        tokenRepo.saveAll(validUserTokens);
     }
 
     public void refreshToken(
@@ -132,11 +129,10 @@ public class AuthenticationService {
                     .orElseThrow();
             if (jwtService.isTokenValid(refreshToken, user)) {
                 var accessToken = jwtService.generateRefreshToken(user);
-                revokeAllUserTokens(user);
+                tokenRepo.deleteTokensByUserId(user.getId());
                 saveUserToken(user, accessToken);
                 var authResponse = AuthenticationResponse.builder()
                         .accessToken(accessToken)
-                        .refreshToken(refreshToken)
                         .build();
                 new ObjectMapper().writeValue(response.getOutputStream(), authResponse);
             }

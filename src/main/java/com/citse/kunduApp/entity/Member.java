@@ -1,5 +1,6 @@
 package com.citse.kunduApp.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -25,12 +26,12 @@ public class Member implements Serializable {
     @Column(name = "fe_instance")
     private LocalDate dateJoin;
 
-    @JsonIgnoreProperties({"userDetail","member","following","followers"})
-    @OneToOne
+    @JsonIgnoreProperties({"userDetail","member","following","followers","biography"})
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "fk_person_id")
     private Person person;
 
-    @JsonIgnoreProperties({"members","gEntity"})
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "fk_group_id")
     private Group group;

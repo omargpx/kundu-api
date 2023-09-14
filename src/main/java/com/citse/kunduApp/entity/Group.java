@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -48,12 +50,14 @@ public class Group implements Serializable {
     @Column(name = "fe_instance", nullable = false)
     private LocalDate creation;
 
-    @JsonIgnoreProperties({"groups","events"})
+    @JsonIgnoreProperties({"groups","events","father"})
+    @JsonProperty("entity")
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "fk_entity_id")
     private Entities gEntity;
 
-    @JsonIgnoreProperties({"group","biography"})
+    @JsonIgnore
     @OneToMany(mappedBy = "group")
     private List<Member> members;
 
