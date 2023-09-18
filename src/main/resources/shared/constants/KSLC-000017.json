@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué significa el nombre de Sansón?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Significa 'hombre fuerte'",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Significa 'apartado para una obra sagrada'",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Significa 'hombre sabio'",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Significa 'hombre olvidadizo'",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Sansón no debía cortarse el cabello?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque le gustaba tener el cabello largo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque su cabello era su fuente de poder como nazareo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque su cabello era muy feo y no quería mostrarlo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque le daba miedo ir al barbero",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo murió el león que se enfrentó a Sansón?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Sansón lo perdonó y lo dejó ir",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Sansón lo despedazó con su fuerza",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "El león huyó asustado de Sansón",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "El león se rindió y se hizo amigo de Sansón",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo derrotó Sansón a los 1000 hombres filisteos?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Usó un arma especial",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Con la ayuda de sus amigos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Con una quijada de asno",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Con un ejército de israelitas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo terminó la vida de Sansón?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Vivió felizmente con Dalila",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Fue liberado por los filisteos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Murió al derribar una columna y derrumbar un edificio con los filisteos",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se convirtió en rey de Israel",
+        "correct": false
+      }
+    ]
+  }
+]

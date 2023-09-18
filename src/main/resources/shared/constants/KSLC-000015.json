@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hizo Dios para ayudar a Josué a conquistar la ciudad de Jericó?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Dios usó un tractor para derribar los muros.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dios mandó dar vueltas alrededor de la ciudad y tocar la trompeta.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Dios construyó escaleras para subir los muros.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dios hizo que los muros desaparecieran mágicamente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál fue la tarea que enfrentó Josué como líder del pueblo de Israel?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Guiar al pueblo en la construcción de muros.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Conquistar la tierra de Jericó.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Cuidar de las ovejas del pueblo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Enseñar a tocar la trompeta.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo reaccionaron los espías al ver las murallas de Jericó?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Pensaron que las murallas eran fáciles de derribar.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Creían que la tarea de derribar las murallas era difícil o imposible.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Decidieron usar un tractor para derribar las murallas.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No prestaron atención a las murallas.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hicieron los israelitas para derribar las murallas de Jericó?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Usaron martillos y cinceles.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dieron vueltas alrededor de la ciudad y tocaron la trompeta.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Construyeron escaleras para subir los muros.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pidieron a Dios que derribara las murallas con un milagro.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué prometió Dios a Josué antes de la conquista de Jericó?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Dios prometió que los muros se derribarían por sí mismos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dios prometió estar con Josué a donde quiera que vaya si se esfuerza y confía.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Dios prometió que la tarea sería fácil y sin desafíos.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dios prometió dar a Josué un tractor mágico para derribar las murallas.",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -52,13 +52,12 @@ public class Group implements Serializable {
 
     @JsonIgnoreProperties({"groups","events","father"})
     @JsonProperty("entity")
-    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "fk_entity_id")
     private Entities gEntity;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "group")
+    @OneToMany(mappedBy = "group",cascade = CascadeType.PERSIST)
     private List<Member> members;
 
     @JsonIgnore

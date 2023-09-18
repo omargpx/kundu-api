@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué frutas trajeron los 12 hombres de Canaán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Manzanas y peras",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Higos, granadas y grandes uvas",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Plátanos y fresas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Sandías y melones",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Quién envió a los 12 espías a Canaán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Abrahán",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Jacob",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Moisés",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué instrucción dio Moisés a los espías antes de enviarlos a Canaán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Traer frutas y regalos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Averiguar cuánta gente vive allí y cuán fuertes son, y traer algunos frutos",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Conquistar la tierra de Canaán de inmediato",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No hacer nada y esperar órdenes adicionales",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionaron la mayoría de los espías al regresar de Canaán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Dijeron que la tierra era buena para sembrar",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dijeron que el pueblo de Canaán era débil y fácil de vencer",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dijeron que parecían langostas al lado de los habitantes de Canaán",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dijeron que deberían conquistar Canaán de inmediato",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué prometió Dios a Caleb y Josué por su fe en la conquista de Canaán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que serían líderes de Israel",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que no tendrían que luchar en la batalla",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que entrarían a la tierra de Canaán",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que serían castigados por desobedecer a Dios",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -27,11 +27,11 @@ public class Member implements Serializable {
     private LocalDate dateJoin;
 
     @JsonIgnoreProperties({"userDetail","member","following","followers","biography"})
-    @OneToOne(fetch = FetchType.EAGER)
+    @OneToOne
     @JoinColumn(name = "fk_person_id")
     private Person person;
 
-    @JsonIgnore
+    @JsonIgnoreProperties({"entity","members","sessions","lema"})
     @ManyToOne
     @JoinColumn(name = "fk_group_id")
     private Group group;

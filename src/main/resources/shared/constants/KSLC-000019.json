@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Dios decidió poner un nuevo rey en lugar de Saúl?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque Saúl se portaba mal.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Saúl era feo.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque Saúl era muy viejo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Saúl no tenía hijos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿A quién le encargó Dios la tarea de encontrar al nuevo rey?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A David.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A Samuel.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "A Saúl.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "A Isaí.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le dijo Dios a Samuel cuando vio al hijo mayor de Isaí?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que lo unja como nuevo rey.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que no se fijara en su apariencia.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Que era un hombre muy fuerte.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que era un guerrero valiente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuántos hijos de Isaí fueron presentados ante Samuel antes de que Dios eligiera al nuevo rey?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Seis hijos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cinco hijos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Siete hijos.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Cuatro hijos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quién finalmente fue ungido como el nuevo rey por Samuel?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "El hijo mayor de Isaí.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El segundo hijo de Isaí.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "El tercer hijo de Isaí.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "El menor de los hijos de Isaí.",
+        "correct": true
+      }
+    ]
+  }
+]

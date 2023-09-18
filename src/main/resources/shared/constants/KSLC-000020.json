@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué problema tenía Ana al principio del texto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No tenía amigos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Era estéril y sufría burlas de otras mujeres",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "No podía hablar con Dios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No quería comer",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿A quién le contó Ana su tristeza?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "A su esposo Elcana",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A su amiga Penina",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "A Dios a través de la oración",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "A su vecina",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo se sentía Ana mientras oraba?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Feliz",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Eufórica",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Triste",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dolorida y con lágrimas",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le prometió Ana a Dios en su oración?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Le prometió construir un templo en su honor",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Le prometió dedicar a su hijo al servicio de Dios",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Le prometió viajar a Tierra Santa",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le prometió escribir un libro sagrado",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quién observó a Ana mientras oraba en el templo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El esposo de Ana, Elcana",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El sacerdote Elí",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Penina",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dios",
+        "correct": false
+      }
+    ]
+  }
+]

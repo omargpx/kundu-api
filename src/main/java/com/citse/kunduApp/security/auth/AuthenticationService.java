@@ -28,6 +28,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -51,8 +52,9 @@ public class AuthenticationService {
     private PersonDao personRepo;
 
 
+    @Transactional
     public AuthenticationResponse register(RegisterRequest request) {
-        verifyExistsUser(request.getEmail(), request.getPhone());// revoke if user already exists with these parameters
+        verifyExistsUser(request.getEmail(), request.getPhone(),request.getUsername());// revoke if user already exists with these parameters
         var user = User.builder()
                 .username(request.getUsername())
                 .email(request.getEmail())
@@ -156,10 +158,11 @@ public class AuthenticationService {
         return VerifyResponse.builder().message("Go ahead").isSuccess(true).build();
     }
 
-    private void verifyExistsUser(String email, String phone){
+    private void verifyExistsUser(String email, String phone,String username){
         var verifyUserEmail = userRepo.findByEmail(email);
         var verifyPhoneNumber = personRepo.findByPhone(phone);
-        if(verifyUserEmail.isPresent() || verifyPhoneNumber.isPresent())
+        var verifyUsername = userRepo.findByUsername(username);
+        if(verifyUserEmail.isPresent() || verifyPhoneNumber.isPresent() || verifyUsername.isPresent())
             throw new KunduException(Services.AUTH_SERVICE.name(),"User already exists", HttpStatus.BAD_REQUEST);
     }
 

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué necesitaba Gedeón para liberar a Israel de los Madianitas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Armas físicas",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Dinero",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Alimentos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Vestimenta especial",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuántos soldados quedaron después de la selección de Gedeón?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "32,000",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "10,000",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "300",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "1,000",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué Dios le dijo a Gedeón que solo llevara a 300 hombres a la batalla?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque los otros soldados no eran lo suficientemente fuertes",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Para que el pueblo no creyera que la victoria era por su propia fuerza",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque los otros soldados no querían luchar",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Dios no confiaba en los otros soldados",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo lograron Gedeón y sus 300 hombres confundir al ejército Madianita?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Con lanzas y flechas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Tocando trompetas y rompiendo cántaros con antorchas",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Usando trampas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Gritando fuerte",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué le pidió Gedeón a Dios como prueba de que Él estaría con él?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que le diera un ejército más grande",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que le diera armas poderosas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que le mostrara señales",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que le diera riquezas",
+        "correct": false
+      }
+    ]
+  }
+]

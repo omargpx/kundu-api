@@ -8,12 +8,14 @@ import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.security.mock.Invitation;
 import com.citse.kunduApp.utils.contracts.PersonService;
 import com.citse.kunduApp.utils.models.Services;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,9 +39,14 @@ public class PersonImp implements PersonService {
     }
 
     @Override
+    @Transactional
     public Person getById(int id) {
         Person person = repo.findById(id)
                 .orElseThrow(() -> new KunduException(Services.PERSON_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND));
+
+        if (!Hibernate.isInitialized(person.getUserDetail().getInvitations())) {
+            Hibernate.initialize(person.getUserDetail().getInvitations());
+        }
 
         List<Object> guests = new ArrayList<>();
 
@@ -47,7 +54,7 @@ public class PersonImp implements PersonService {
             List<Invitation> invitations = person.getUserDetail().getInvitations();
             invitations.forEach(invitation -> {
                 Optional<User> userOP = userRepo.findByEmail(invitation.getEmail());
-                if(userOP.isPresent()){
+                if (userOP.isPresent()) {
                     User user = userOP.get();
                     Person p = repo.findPersonByUsername(user.getUsername());
                     guests.add(p);
@@ -57,7 +64,6 @@ public class PersonImp implements PersonService {
         }
         return person;
     }
-
     @Override
     public Person save(Person person) {
         return repo.save(person);
@@ -81,11 +87,17 @@ public class PersonImp implements PersonService {
 
     @Cacheable(value = "findByKunduCode")
     @Override
+    @Transactional
     public Person findByKunduCode(String kunduCode) {
         Person person = repo.findByKunduCode(kunduCode);
-        List<Object> guests = new ArrayList<>();
         if(null==person)
             throw new KunduException(Services.PERSON_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND);
+        if (!Hibernate.isInitialized(person.getUserDetail().getInvitations())) {
+            Hibernate.initialize(person.getUserDetail().getInvitations());
+        }
+
+        List<Object> guests = new ArrayList<>();
+
         if (person.getUserDetail() != null && person.getUserDetail().getInvitations() != null) {
             List<Invitation> invitations = person.getUserDetail().getInvitations();
             invitations.forEach(invitation -> {
@@ -121,6 +133,6 @@ public class PersonImp implements PersonService {
         List<Person> matchingUsers = repo.searchByFullNameOrNickname(query);
         if(!matchingUsers.isEmpty())
             return matchingUsers;
-        throw new KunduException(Services.PERSON_SERVICE.name(), "Username not found", HttpStatus.NOT_FOUND);
+        return new ArrayList<>();
     }
 }

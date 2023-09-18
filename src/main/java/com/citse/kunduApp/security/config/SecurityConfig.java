@@ -61,7 +61,7 @@ public class SecurityConfig {
                     ObjectMapper objMapper = new ObjectMapper();
                     var JWTError = new AuthJWTResponse(request.getRequestURI(),"You are not authorized to access this resource", HttpStatus.UNAUTHORIZED.value());
                     response.getWriter().write(objMapper.writeValueAsString(JWTError));
-                });;
+                });
         return http.build();
     }
 }

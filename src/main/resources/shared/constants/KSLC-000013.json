@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "question": "¿Qué observaste en la imagen?",
+    "question": "¿Qué le entrego Dios a Moisés?",
     "alternatives": [
       {
         "id": 1,
-        "alternative": "Basura tirada por los suelos",
+        "alternative": "10 reglas importante",
         "correct": true
       },
       {
         "id": 2,
-        "alternative": "Personas felices",
+        "alternative": "Cuatro leyes",
         "correct": false
       },
       {
         "id": 3,
-        "alternative": "Edificios altos",
+        "alternative": "Un manto",
         "correct": false
       },
       {
         "id": 4,
-        "alternative": "Animales jugando",
+        "alternative": "La vara de Aarón",
         "correct": false
       }
     ]

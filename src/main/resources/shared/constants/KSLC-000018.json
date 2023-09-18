@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Dios estuvo triste por el pedido del pueblo de tener un rey humano en lugar de un rey celestial?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque el pueblo no obedeció a Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque el rey Saúl era muy atractivo.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque el pueblo prefería un rey humano sobre un rey celestial.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Dios no quería que el pueblo tuviera un rey.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo era Saúl cuando fue elegido como rey?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Era orgulloso y arrogante desde el principio.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Era humilde y amaba a Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Era un hombre muy alto.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Era impulsivo y reactivo.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hizo Saúl cuando Samuel no llegó a tiempo para hacer el sacrificio?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Esperó pacientemente a Samuel.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Ofreció el sacrificio por su cuenta.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Le pidió al pueblo que esperara más tiempo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Decidió no realizar el sacrificio en absoluto.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionó Saúl cuando Samuel le recriminó por ofrecer el sacrificio?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se disculpó y se arrepintió de su acción.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Echó la culpa al pueblo y justificó su acción.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Aceptó la reprimenda y buscó el perdón de Dios.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Renunció a su cargo como rey.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué característica negativa desarrolló Saúl como resultado de su reinado?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se volvió más humilde y obediente.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se volvió más impulsivo y orgulloso.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se volvió más amoroso y compasivo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se volvió más devoto y fiel a Dios.",
+        "correct": false
+      }
+    ]
+  }
+]

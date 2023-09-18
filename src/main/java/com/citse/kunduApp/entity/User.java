@@ -48,7 +48,7 @@ public class User implements UserDetails {
     private Person person;
 
     @JsonIgnoreProperties({"userReserve"})
-    @OneToMany(mappedBy = "userReserve", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "userReserve")
     private List<Invitation> invitations;
 
     @Transient
