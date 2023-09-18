@@ -21,7 +21,12 @@ chore: to show the change of dependencies
 
 To execute the api, follow the following commands:
 ```
->  git clone https://github.com/citseOfficial/Kundu-api.git
->  cd Kundu-api
-> .\gradlew bootRun
+git clone https://github.com/citseOfficial/Kundu-api.git && Kundu-api
+```
+
+_execute command:_
+> _Note: follow to application.yml and allow access
+> to create a database temp in mysql or other database with sql._
+```
+.\gradlew bootRun
 ```

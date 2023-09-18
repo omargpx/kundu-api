@@ -52,7 +52,7 @@ public class PersonServiceTest {
     public void testSearchPersonWithNoResults() {
         // config
         MockitoAnnotations.openMocks(this);
-        String query = "Luckovichk";
+        String query = "Luca";
 
         when(personRepository.searchByFullNameOrNickname(anyString())).thenReturn(Collections.emptyList());
         assertEquals("Username not found", new Object());
