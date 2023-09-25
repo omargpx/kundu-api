@@ -1,6 +1,9 @@
 package com.citse.kunduApp.repository;
 
 import com.citse.kunduApp.entity.Person;
+import com.citse.kunduApp.utils.models.SimplePerson;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -20,6 +23,6 @@ public interface PersonDao extends JpaRepository<Person,Integer> {
     List<Person> searchByFullNameOrNickname(@Param("query")String query);
 
     Optional<Person> findByPhone(String phone);
-
+    Page<SimplePerson> findAllBy(Pageable pageable);//TODO: FIX IT
 
 }

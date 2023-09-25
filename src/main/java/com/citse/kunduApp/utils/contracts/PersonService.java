@@ -1,6 +1,7 @@
 package com.citse.kunduApp.utils.contracts;
 
 import com.citse.kunduApp.entity.Person;
+import com.citse.kunduApp.utils.models.SimplePerson;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -15,7 +16,7 @@ public interface PersonService {
 
     //FILTERS
     Person findByKunduCode(String kunduCode);
-    Page<Person> getPeoplePages(Pageable pageable);
+    Page<SimplePerson> getPeoplePages(Pageable pageable);
     Person findByPhone(String phone);
     List<Person> searchPerson(String query);
 }

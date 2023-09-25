@@ -56,8 +56,8 @@ public class Group implements Serializable {
     @JoinColumn(name = "fk_entity_id")
     private Entities gEntity;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "group",cascade = CascadeType.PERSIST)
+    @JsonIgnoreProperties("group")
+    @OneToMany(mappedBy = "group")
     private List<Member> members;
 
     @JsonIgnore

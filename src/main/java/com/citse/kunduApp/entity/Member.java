@@ -26,12 +26,12 @@ public class Member implements Serializable {
     @Column(name = "fe_instance")
     private LocalDate dateJoin;
 
-    @JsonIgnoreProperties({"userDetail","member","following","followers","biography"})
+    @JsonIgnoreProperties({"user","member","biography"})
     @OneToOne
     @JoinColumn(name = "fk_person_id")
     private Person person;
 
-    @JsonIgnoreProperties({"entity","members","sessions","lema"})
+    @JsonIgnoreProperties({"entity","members","lema"})
     @ManyToOne
     @JoinColumn(name = "fk_group_id")
     private Group group;

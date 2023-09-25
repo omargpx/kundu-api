@@ -13,12 +13,14 @@ import com.citse.kunduApp.utils.contracts.GroupService;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.contracts.ThemesContentService;
 import com.citse.kunduApp.utils.models.Services;
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -49,11 +51,14 @@ public class GroupImp implements GroupService {
     }
 
     @Override
+    @Transactional
     public Optional<Group> getById(int id) {
         Optional<Group> group = repo.findById(id);
-        if(group.isPresent())
-            return group;
-        throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
+        if(group.isEmpty())
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
+        if(!Hibernate.isInitialized(group.get().getMembers()))
+            Hibernate.initialize(group.get().getMembers());
+        return group;
     }
 
     @Override
@@ -74,14 +79,18 @@ public class GroupImp implements GroupService {
     }
 
     @Override
+    @Transactional
     public Group getByCode(String code) {
         Group group = repo.findByCode(code);
-        if (null!= group)
-            return group;
-        throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
+        if (null== group)
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
+        if(!Hibernate.isInitialized(group.getMembers()))
+            Hibernate.initialize(group.getMembers());
+        return group;
     }
 
     @Override
+    @Transactional
     public Group applyJoinGroup(String code, String kunduCode) {
         Person person = personRepo.findByKunduCode(kunduCode);
         Group group = getByCode(code);
@@ -105,6 +114,7 @@ public class GroupImp implements GroupService {
     }
 
     @Override
+    @Transactional
     public List<Session> getSessionFromGroupByCode(String code) {
         var group = getByCode(code);
         List<Session> sessions = repo.getSessionsByGroupCode(group);
@@ -120,14 +130,30 @@ public class GroupImp implements GroupService {
     }
 
     @Override
-    public void updateSession(String code, String codeLesson, Integer status) {//TODO: auto activate next lesson
+    @Transactional
+    public void updateSession(String code, String codeLesson) {//TODO: auto activate next lesson
         var group = getByCode(code);
         Session session = sessionRepo.findByLessonCode(codeLesson);
         if(session==null)
             throw new KunduException(Services.GROUP_SERVICE.name(), "Unregistered lesson", HttpStatus.NOT_FOUND);
         if(!group.getSessions().contains(session))
-            throw new KunduException(Services.GROUP_SERVICE.name(), "The lesson code was not found within the "+group.getName()+" sessions.", HttpStatus.NOT_FOUND);
-        session.setStatus(status);
+            throw new KunduException(Services.GROUP_SERVICE.name(), "The lesson code was not found with the "+group.getName()+" sessions.", HttpStatus.NOT_FOUND);
+        var position = group.getSessions().indexOf(session);
+        session.setStatus(2);
         sessionRepo.save(session);
+        if(position>=0 && position< group.getSessions().size()){
+            var nextSessionOn = group.getSessions().get(position+1);
+            nextSessionOn.setStatus(1);
+            group.getSessions().set((position+1),nextSessionOn);
+        }
+    }
+
+    @Override
+    @Transactional
+    public List<Member> getMembersByGroupCode(String code) {
+        var group = getByCode(code);
+        if(!Hibernate.isInitialized(group.getMembers()))
+            Hibernate.initialize(group.getMembers());
+        return repo.getMembersByGroup(group);
     }
 }

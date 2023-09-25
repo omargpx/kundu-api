@@ -2,6 +2,7 @@ package com.citse.kunduApp.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -40,9 +41,10 @@ public class Person implements Serializable {
     @Column(name = "fe_join_to_kundu")
     private LocalDate joinDate;
 
-    @JsonIgnoreProperties({"person","secure","password","enabled",
+    @JsonIgnoreProperties({"secure","password","enabled",
             "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})
     @OneToOne
+    @JsonProperty("user")
     @JoinColumn(name = "fk_user_id")
     private User userDetail;
 

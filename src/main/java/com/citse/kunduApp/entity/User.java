@@ -52,7 +52,7 @@ public class User implements UserDetails {
     private List<Invitation> invitations;
 
     @Transient
-    @JsonIgnoreProperties({"member", "userDetail"})
+    @JsonIgnoreProperties({"member", "user"})
     private List<Object> guests;
 
     @JsonIgnore

@@ -8,6 +8,7 @@ import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.security.mock.Invitation;
 import com.citse.kunduApp.utils.contracts.PersonService;
 import com.citse.kunduApp.utils.models.Services;
+import com.citse.kunduApp.utils.models.SimplePerson;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
@@ -113,10 +114,9 @@ public class PersonImp implements PersonService {
         return person;
     }
 
-    @Cacheable(value = "getPeopleByPage")
     @Override
-    public Page<Person> getPeoplePages(Pageable pageable) {
-        return repo.findAll(pageable);
+    public Page<SimplePerson> getPeoplePages(Pageable pageable) {
+        return repo.findAllBy(pageable);
     }
 
     @Override
@@ -127,7 +127,6 @@ public class PersonImp implements PersonService {
         throw new KunduException(Services.PERSON_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND);
     }
 
-    @Cacheable(value = "searchPersonByFullNameOrNickname")
     @Override
     public List<Person> searchPerson(String query) {
         List<Person> matchingUsers = repo.searchByFullNameOrNickname(query);

@@ -1,6 +1,7 @@
 package com.citse.kunduApp.utils.contracts;
 
 import com.citse.kunduApp.entity.Group;
+import com.citse.kunduApp.entity.Member;
 import com.citse.kunduApp.entity.Session;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -19,5 +20,7 @@ public interface GroupService {
     Group applyJoinGroup(String code, String kunduCode);
     Page<Group> getGroupPages(Pageable pageable);
     List<Session> getSessionFromGroupByCode(String code);
-    void updateSession(String code, String codeLesson, Integer status);
+    void updateSession(String code, String codeLesson);
+
+    List<Member> getMembersByGroupCode(String code);
 }

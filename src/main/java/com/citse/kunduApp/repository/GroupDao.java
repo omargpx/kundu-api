@@ -1,6 +1,7 @@
 package com.citse.kunduApp.repository;
 
 import com.citse.kunduApp.entity.Group;
+import com.citse.kunduApp.entity.Member;
 import com.citse.kunduApp.entity.Session;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -15,6 +16,9 @@ public interface GroupDao extends JpaRepository<Group,Integer> {
 
     @Query("SELECT s FROM Session s WHERE s.groupSession = :group")
     List<Session> getSessionsByGroupCode(@Param("group")Group group);
+
+    @Query("SELECT m FROM Member m WHERE m.group = :group")
+    List<Member> getMembersByGroup(@Param("group")Group group);
 
     @Query("DELETE FROM Session s WHERE s.groupSession = :group")
     void cleanSessions(@Param("group")Group group);
