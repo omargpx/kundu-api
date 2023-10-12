@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué rey se menciona en el texto que ponía ídolos para que el pueblo los adorara en lugar de al verdadero Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Salomón",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Acab",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Elías",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Baal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuántos años pasaron sin lluvia después de la advertencia de Elías al rey Acab?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "1 año",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "2 años",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "3 años",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "4 años",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hicieron los profetas de Baal para tratar de obtener una respuesta de su dios en el monte Carmelo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Oraron a Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Saltaron sobre el altar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se cortaron con cuchillos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Todo lo anterior",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo demostró Elías que el Dios verdadero era el único capaz de responder con fuego en el monte Carmelo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Haciendo un sacrificio con 12 bueyes",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pidiendo a la multitud que se arrodillara",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Orando y haciendo que echaran agua sobre el altar",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Recitando versos de la Biblia",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué sucedió cuando Elías oró en el monte Carmelo después de que se echara agua sobre el altar?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No ocurrió nada, el fuego no prendió",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cayó fuego del cielo y consumió el sacrificio, la leña, las piedras y secó el agua",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Hubo un terremoto",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se produjo una lluvia intensa",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -16,7 +16,12 @@ public interface PersonService {
 
     //FILTERS
     Person findByKunduCode(String kunduCode);
-    Page<SimplePerson> getPeoplePages(Pageable pageable);
+    Page<Person> getPeoplePages(Pageable pageable);
     Person findByPhone(String phone);
-    List<Person> searchPerson(String query);
+    List<SimplePerson> searchPerson(String query);
+
+    List<?> getFollowers(int id,Integer page, Integer size);
+
+    List<?> getFollowings(int id, Integer page, Integer size);
+    List<?> getSuggestFriends(Integer id);
 }

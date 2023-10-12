@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿A qué edad inició su reinado el rey protagonista de la historia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A los 12 años.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A los 15 años.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "A los 8 años.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "A los 18 años.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué mandó hacer el rey después de 18 años de reinar?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Construir un palacio real nuevo.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Mandar reparar el templo del Señor.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Construir un ejército poderoso.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Promulgar nuevas leyes.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué descubrió el sumo sacerdote Hilcías mientras reparaban el templo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Un tesoro escondido.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Unos rollos llenos de polvo.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Una nueva forma de adorar a Dios.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Una inscripción en una pared antigua.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo el rey Josías cuando escuchó la lectura de la Ley de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se enfureció y ordenó quemar los rollos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Rompó sus vestidos en señal de arrepentimiento.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se sintió indiferente y continuó trabajando.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Ordenó que encarcelaran al sumo sacerdote.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué reaccionó de esa manera el rey Josías al encontrar la Ley de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque se enojó con Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque nunca había oído hablar de la Ley antes.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque había abandonado a Dios en su juventud.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque desde joven quiso agradar a Dios y encontró la dirección que necesitaba.",
+        "correct": true
+      }
+    ]
+  }
+]

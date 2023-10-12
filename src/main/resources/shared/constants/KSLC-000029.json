@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué personaje bíblico estudiaba y practicaba la Palabra de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "David",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Esdras",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Noé",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hicieron para que el pueblo pudiera escuchar a Esdras?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Usaron parlantes y micrófonos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Prepararon un estrado de madera en la plaza.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Repartieron audífonos a la multitud.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Hicieron que la gente se acercara mucho a Esdras.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cuánto tiempo predicó Esdras ante el pueblo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Una hora",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dos horas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Cuatro horas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Seis horas",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionó el pueblo después de la predicación de Esdras?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se durmieron porque estaba aburrido.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Alabaron a Dios y gritaron ¡Amén!",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se enojaron y se fueron.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No prestaron atención y hablaron entre ellos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo Esdras además de leer la Palabra de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Bailó y cantó canciones populares.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Enseñó la Palabra de Dios al pueblo.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se retiró sin decir nada.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pidió al pueblo que se fuera sin escucharlo.",
+        "correct": false
+      }
+    ]
+  }
+]

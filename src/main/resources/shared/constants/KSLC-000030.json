@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál era la ocupación principal de Nehemías antes de convertirse en gobernador de Judá?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Agricultor",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cocinero",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Copero del rey persa",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Carpintero",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué motivó a Nehemías a regresar a Judá después de estar en Persia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "La búsqueda de un mejor trabajo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La necesidad de restaurar el templo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Un problema de salud",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Una oportunidad de viaje",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hicieron algunos enemigos en Judá mientras Nehemías estaba ausente?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Ayudaron a reconstruir el templo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Adoraron y alabaron a dioses falsos",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Ayudaron a Nehemías en su ausencia",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se unieron a Nehemías en su trabajo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué instrucción importante dio Nehemías cuando regresó a Judá?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Dejar de trabajar por completo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "No leer la Ley de Dios",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "No mezclarse con extranjeros que enseñaban cosas diferentes a la Palabra de Dios",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dejar de adorar a Dios por completo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué actividad encontró Nehemías que el pueblo estaba realizando en el día sábado y que estaba en contra de la Ley de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Predicar y servir al prójimo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cultivar y cosechar",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Leer la Ley de Dios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Descansar y adorar a Dios",
+        "correct": false
+      }
+    ]
+  }
+]

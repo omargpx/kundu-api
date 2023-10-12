@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué rey sucedió a David en el trono de Israel?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Salomón",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Absalón",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Saúl",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Josué",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué consejo le dio David a Salomón cuando lo nombró rey?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Guardar los caminos de Dios y sus mandamientos",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Conquistar nuevos territorios",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Acumular riquezas y poder",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dejar que el pueblo gobierne por sí mismo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le pidió Dios a Salomón que pidiera en un sueño?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Riquezas y gloria",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Poder eterno",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Sabiduría para gobernar al pueblo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Una larga vida",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Salomón cuando dos mujeres discutieron sobre la maternidad de un bebé?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Ordenó que dividieran al bebé en dos partes",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Decidió dar al bebé a la mujer que reclamaba ser su madre verdadera",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Entregó al bebé a la mujer que tenía más testigos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pidió a Dios que decidiera",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál fue la recompensa adicional que Dios otorgó a Salomón por su pedido de sabiduría?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Poder eterno",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Riquezas y gloria",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Un largo reinado",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un ejército invencible",
+        "correct": false
+      }
+    ]
+  }
+]

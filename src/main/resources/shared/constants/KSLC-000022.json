@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué le pidió Elías a la viuda cuando llegó a Sarepta?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Agua para beber",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Un poco de pan",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Leña para hacer fuego",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dinero",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué la viuda le dijo a Elías que no podía darle pan?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque no tenía harina ni aceite",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque no le gustaba compartir",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque tenía miedo de Elías",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque estaba ocupada recogiendo leña",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué prometió Elías a la viuda cuando le pidió pan?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que la harina y el aceite nunca faltarían hasta que llegara la lluvia",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Que la protegería de los ladrones",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que le daría mucho dinero a cambio",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que no podía hacer nada por ella",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le sucedió al hijo de la viuda mientras Elías estaba con ellos?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se enfermó gravemente y murió",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se volvió más fuerte y saludable",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se fue de la casa",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se convirtió en un gran profeta",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo Elías para devolverle la vida al hijo de la viuda?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Oró sobre el niño tres veces",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Le dio una medicina especial",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Hizo un milagro con agua",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No hizo nada, el niño se recuperó solo",
+        "correct": false
+      }
+    ]
+  }
+]

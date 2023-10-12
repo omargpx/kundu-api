@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Quién era Esdras?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Un sacerdote del Señor",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Un rey de Medo Persia",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Un adivino",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un falso profeta",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Estudiaba Esdras la Biblia con dedicación?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque era su curso favorito",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque los números eran difíciles para él",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque aquellos que ignoraban las Escrituras siempre estaban en problemas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque quería ser el más aplicado de su clase",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué resultado obtenía Esdras gracias a su dedicación a estudiar la Biblia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se convertía en un adivino famoso",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Era llevado como esclavo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La buena mano de Dios estaba con él",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Terminaba adorando ídolos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué desarrolla el estudio de la Biblia según el texto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Desarrolla habilidades para vencer enemigos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Desarrolla habilidades de adivinación",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Desarrolla todas nuestras capacidades",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Desarrolla habilidades de escritura",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Dónde era conocido Esdras?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "En la corte de Babilonia",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "En la corte de Egipto",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "En todo el reino de Medo Persia",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "En la corte de Israel",
+        "correct": false
+      }
+    ]
+  }
+]

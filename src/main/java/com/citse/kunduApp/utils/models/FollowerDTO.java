@@ -5,8 +5,8 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class SimpleMember {
+public class FollowerDTO {
     private Integer id;
-    private LocalDate dateJoin;
+    private LocalDate date;
     private SimplePerson person;
 }

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cómo describirías al profeta Elías?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Valiente y temeroso de Dios",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "B. Tímido y cobarde",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Desconfiado y egoísta",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "D. Rebelde y desobediente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué amenaza hizo Jezabel a Elías después de enterarse de lo sucedido en el monte Carmelo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Prometió darle un gran regalo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Amenazó con matarlo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "C. Le ofreció protección y amistad",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "D. No le dijo nada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hizo Elías cuando Jezabel lo amenazó de muerte?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Se enfrentó a ella valientemente",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Huyó y se escondió",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "C. Le envió un mensaje desafiante",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "D. Se entregó a Jezabel",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo se comunicó Dios con Elías cuando estaba en la cueva?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. A través de un fuerte trueno",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Mediante un terremoto",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Con un sonido suave como un silbido",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. A través de una voz poderosa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Dios le dio a Elías la tarea de ungir al nuevo profeta Eliseo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A. Porque Elías había sido desobediente",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "B. Para castigar a Elías",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "C. Porque Dios quería llevar a Elías al cielo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "D. Porque Eliseo era un mejor profeta",
+        "correct": false
+      }
+    ]
+  }
+]

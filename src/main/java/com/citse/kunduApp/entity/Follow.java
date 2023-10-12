@@ -1,5 +1,7 @@
 package com.citse.kunduApp.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,10 +26,12 @@ public class Follow implements Serializable {
     private LocalDate date;
 
     @ManyToOne
+    @JsonIgnoreProperties({"member","followers","following","user"})
     @JoinColumn(name = "fk_follower_id")
     private Person follower;
 
     @ManyToOne
+    @JsonIgnoreProperties({"member","followers","following","user"})
     @JoinColumn(name = "fk_followed_id")
     private Person followed;
 }

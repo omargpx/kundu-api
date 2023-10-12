@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Quién fue el rey de Judá que levantó ídolos por todos los lugares y apartó al pueblo de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Acaz",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Ezequías",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abías",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Isaías",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Ezequías cuando reinó en Jerusalén?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Levantó más ídolos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Reunió a los levitas para limpiar el templo y realizó reformas religiosas",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Siguió el ejemplo de su padre, Acaz",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Abandonó la religión por completo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué profeta vino a advertir a Ezequías sobre su enfermedad?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaías",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Acaz",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abías",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jehová",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Ezequías cuando escuchó la advertencia de Isaías sobre su muerte?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se enojó y rechazó la advertencia",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Lloró amargamente y oró a Dios",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Ignoró la advertencia y continuó con sus actividades",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Buscó a otros profetas para obtener una segunda opinión",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué señal le dio Dios a Ezequías para confirmar que viviría 15 años más?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Hizo que la sombra retrocediera 10 grados",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Le envió un mensaje a través de un sueño",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Envió un ángel para hablar con él",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No le dio ninguna señal",
+        "correct": false
+      }
+    ]
+  }
+]

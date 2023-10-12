@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué el rey de Siria quería capturar a Eliseo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque Eliseo estaba informando al rey de Israel sobre los planes del rey de Siria."
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Eliseo estaba liderando el ejército de Israel en la guerra contra Siria."
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque Eliseo había robado el tesoro del rey de Siria."
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Eliseo estaba profetizando sobre la caída del rey de Siria."
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo se sentía el siervo de Eliseo cuando vio al ejército de Siria rodeando la ciudad?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Tranquilo y confiado."
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Asustado y con el corazón latiendo muy fuerte."
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Feliz y emocionado."
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Indiferente y despreocupado."
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le dijo Eliseo a su siervo cuando este le avisó del ejército de Siria?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Le ordenó que se rindiera y se entregara al ejército de Siria."
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Le pidió que preparara las armas y se preparara para la batalla."
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le dijo que no se preocupara, ya que Dios estaba con ellos."
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Le regañó por haberse asustado."
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué vio el siervo de Eliseo después de que Eliseo orara?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Vio a los soldados de Israel rodeando la ciudad."
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Vio a Eliseo luchando contra el ejército de Siria."
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Vio un ejército de ángeles, soldados, caballos y carros de fuego que rodeaban al ejército de Siria."
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No vio nada inusual."
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué lecciones podemos aprender de esta historia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que la guerra siempre termina en destrucción y muerte."
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que la fe en Dios puede traer protección y seguridad en momentos de miedo y peligro."
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Que Eliseo era un espía que trabajaba para el rey de Israel."
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que el rey de Siria finalmente logró capturar a Eliseo."
+        "correct": false
+      }
+    ]
+  }
+]

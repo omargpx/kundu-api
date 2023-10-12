@@ -11,11 +11,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -52,13 +51,17 @@ public class User implements UserDetails {
     private List<Invitation> invitations;
 
     @Transient
+    @Builder.Default
     @JsonIgnoreProperties({"member", "user"})
-    private List<Object> guests;
+    private List<Object> guests = new ArrayList<>();
 
     @JsonIgnore
     @OneToMany(mappedBy = "user")
     private List<Token> tokens;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "moderator")
+    private List<Space> spaces;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return role.getAuthorities();

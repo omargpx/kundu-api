@@ -2,6 +2,7 @@ package com.citse.kunduApp.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -50,14 +51,20 @@ public class Person implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "follower")
-    private List<Follow> followers;
+    private List<Follow> following;
 
     @JsonIgnore
     @OneToMany(mappedBy = "followed")
-    private List<Follow> following;
+    private List<Follow> followers;
 
     @JsonIgnoreProperties({"person"})
     @OneToOne(mappedBy = "person", cascade = CascadeType.MERGE)
     private Member member;
 
+    @Transient
+    @JsonProperty("followers")
+    private int numFollowers;
+    @Transient
+    @JsonProperty("following")
+    private int numFollowing;
 }

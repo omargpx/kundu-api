@@ -54,6 +54,26 @@ public class PersonController {
             return ResponseEntity.ok(kus.getResponse(request,origin,service.findByPhone(phone),HttpStatus.OK));
         throw new KunduException(origin,"Kundu-api at your command",HttpStatus.PARTIAL_CONTENT);
     }
+    @GetMapping("/{id}/suggest")
+    public ResponseEntity<?> getAllFollowers(@PathVariable int id, HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request,origin,service.getSuggestFriends(id),HttpStatus.OK));
+    }
+    @GetMapping("/{id}/followers")
+    public ResponseEntity<?> getAllFollowers(@PathVariable int id, HttpServletRequest request,
+                                             @RequestParam(name = "pg",required = false)Integer page,
+                                             @RequestParam(name = "sz",required = false)Integer size){
+        if(null==page)
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getFollowers(id,0,100),HttpStatus.OK));
+        return ResponseEntity.ok(kus.getResponse(request,origin,service.getFollowers(id,page,size),HttpStatus.OK));
+    }
+    @GetMapping("/{id}/followings")
+    public ResponseEntity<?> getAllFollowings(@PathVariable int id, HttpServletRequest request,
+                                             @RequestParam(name = "pg",required = false)Integer page,
+                                             @RequestParam(name = "sz",required = false)Integer size){
+        if(null==page)
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getFollowings(id,0,100),HttpStatus.OK));
+        return ResponseEntity.ok(kus.getResponse(request,origin,service.getFollowings(id,page,size),HttpStatus.OK));
+    }
 
     @PutMapping("/{id}/update")
     public ResponseEntity<?> updatePerson(@PathVariable int id, @RequestBody Person person,
