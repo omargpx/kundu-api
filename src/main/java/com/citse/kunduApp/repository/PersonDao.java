@@ -16,6 +16,9 @@ public interface PersonDao extends JpaRepository<Person,Integer> {
     Person findByKunduCode(String kunduCode);
     @Query("SELECT p FROM Person p JOIN p.userDetail u WHERE u.username = :username")
     Person findPersonByUsername(@Param("username") String username);
+    @Query("SELECT p FROM Person p JOIN p.userDetail u WHERE u.email = :email")
+    Person findPersonByEmail(@Param("email") String email);
+
     @Query("SELECT p FROM Person p LEFT JOIN p.userDetail u WHERE LOWER(p.name) LIKE LOWER(CONCAT('%',:query,'%'))" +
             "OR LOWER(u.username) LIKE LOWER(CONCAT('%',:query,'%'))")
     List<Person> searchByFullNameOrNickname(@Param("query")String query,Pageable pageable);

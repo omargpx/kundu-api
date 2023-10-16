@@ -87,8 +87,8 @@ public class GroupImp implements GroupService {
         Group group = repo.findByCode(code);
         if (null== group)
             throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
-        if(!Hibernate.isInitialized(group.getMembers()))
-            Hibernate.initialize(group.getMembers());
+        //initialize entities
+        Hibernate.initialize(group.getMembers());
         List<SimpleMember> members = group.getMembers().stream().map(this::memberToDTO).toList();
         var gr = groupToDTO(group);
         gr.setMembers(members);
@@ -102,9 +102,11 @@ public class GroupImp implements GroupService {
         Group group = repo.findByCode(code);
         if(group==null || person==null)
             throw new KunduException(Services.GROUP_SERVICE.name(),"the code is wrong", HttpStatus.NOT_FOUND);
+        if (group.getMembers().size()>=45)
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Limit reached", HttpStatus.NOT_FOUND);
         var verifyMember = memberRepo.findByPerson(person);
         if(verifyMember.isPresent())
-            throw new KunduException(Services.GROUP_SERVICE.name(), "Member already exists", HttpStatus.BAD_REQUEST);
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Member already exists", HttpStatus.BAD_REQUEST);
         memberRepo.save(Member.builder().
                 person(person).
                 group(group).
@@ -195,11 +197,7 @@ public class GroupImp implements GroupService {
         return SimplePerson.builder()
                 .id(person.getId())
                 .avatar(person.getAvatar())
-                .birth(person.getBirth())
                 .biography(person.getBiography())
-                .joinDate(person.getJoinDate())
-                .experience(person.getExperience())
-                .phone(person.getPhone())
                 .kunduCode(person.getKunduCode())
                 .name(person.getName())
                 .user(person.getUserDetail())

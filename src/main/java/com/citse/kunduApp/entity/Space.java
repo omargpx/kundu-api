@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -26,11 +27,13 @@ public class Space implements Serializable {
     @Column(name = "no_space")
     private String name;
     @Column(name = "fe_creation")
-    private LocalDate creation; //TODO:change to DATETIME and after 5 hours from creation delete space
+    private LocalDateTime creation; //TODO:change to DATETIME and after 5 hours from creation delete space
     @Column(name = "co_space")
     private String code;
     @Column(name = "token")
     private String token;
+    @Column(name = "status")
+    private boolean status;
 
     @JsonIgnoreProperties({"invitations","guests","secure","password","enabled",
             "credentialsNonExpired","accountNonExpired","authorities","accountNonLocked"})

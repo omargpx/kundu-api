@@ -1,4 +1,4 @@
-package com.citse.kunduApp.controller;
+package com.citse.kunduApp.modules;
 
 import com.citse.kunduApp.exceptions.KunduException;
 import com.citse.kunduApp.repository.SpaceDao;

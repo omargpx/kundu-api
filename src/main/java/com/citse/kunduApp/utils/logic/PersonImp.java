@@ -59,11 +59,8 @@ public class PersonImp implements PersonService {
             List<Invitation> invitations = person.getUserDetail().getInvitations();
             invitations.forEach(invitation -> {
                 Optional<User> userOP = userRepo.findByEmail(invitation.getEmail());
-                if (userOP.isPresent()) {
-                    User user = userOP.get();
-                    Person p = repo.findPersonByUsername(user.getUsername());
-                    guests.add(p);
-                }
+                if (userOP.isPresent())
+                    guests.add(personToDTO(repo.findPersonByEmail(invitation.getEmail())));
             });
             Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         }
@@ -94,16 +91,18 @@ public class PersonImp implements PersonService {
         repo.deleteById(personId);
     }
 
-    @Cacheable(value = "findByKunduCode")
+//    @Cacheable(value = "findByKunduCode")
     @Override
     @Transactional
     public Person findByKunduCode(String kunduCode) {
         Person person = repo.findByKunduCode(kunduCode);
         if(null==person)
             throw new KunduException(Services.PERSON_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND);
-        if (!Hibernate.isInitialized(person.getUserDetail().getInvitations())) {
-            Hibernate.initialize(person.getUserDetail().getInvitations());
-        }
+
+        //loading the entities
+        Hibernate.initialize(person.getUserDetail().getInvitations());
+        Hibernate.initialize(person.getFollowers());
+        Hibernate.initialize(person.getFollowing());
 
         List<Object> guests = new ArrayList<>();
         person.setNumFollowers(person.getFollowers().size());
@@ -112,11 +111,7 @@ public class PersonImp implements PersonService {
             List<Invitation> invitations = person.getUserDetail().getInvitations();
             invitations.forEach(invitation -> {
                 Optional<User> userOP = userRepo.findByEmail(invitation.getEmail());
-                if(userOP.isPresent()){
-                    User user = userOP.get();
-                    Person p = repo.findPersonByUsername(user.getUsername());
-                    guests.add(p);
-                }
+                userOP.ifPresent(user -> guests.add(personToDTO(user.getPerson())));
             });
             Objects.requireNonNull(person.getUserDetail()).setGuests(guests);
         }
@@ -197,14 +192,17 @@ public class PersonImp implements PersonService {
         return SimplePerson.builder()
                 .id(person.getId())
                 .avatar(person.getAvatar())
-                .birth(person.getBirth())
                 .biography(person.getBiography())
-                .joinDate(person.getJoinDate())
-                .experience(person.getExperience())
-                .phone(person.getPhone())
                 .kunduCode(person.getKunduCode())
                 .name(person.getName())
-                .user(person.getUserDetail())
+                .user(userToDTO(person.getUserDetail()))
+                .build();
+    }
+    private User userToDTO(User user){
+        return User.builder()
+                .id(user.getId())
+                .email(user.getEmail())
+                .username(user.getUsername())
                 .build();
     }
 }

@@ -52,7 +52,7 @@ public class User implements UserDetails {
 
     @Transient
     @Builder.Default
-    @JsonIgnoreProperties({"member", "user"})
+    @JsonIgnoreProperties({"member"})
     private List<Object> guests = new ArrayList<>();
 
     @JsonIgnore

@@ -7,7 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 
 @Data
 @Builder
@@ -16,15 +15,11 @@ import java.time.LocalDate;
 public class SimplePerson {
     private Integer id;
     private String name;
-    private String phone;
     private String avatar;
     private String kunduCode;
     private String biography;
-    private int experience;
-    private LocalDate birth;
-    private LocalDate joinDate;
     @JsonIgnoreProperties({"secure","password","enabled",
             "credentialsNonExpired","accountNonExpired","authorities",
-            "accountNonLocked","invitations","guests"})
+            "accountNonLocked","invitations","guests","role","lastConnect"})
     private User user;
 }

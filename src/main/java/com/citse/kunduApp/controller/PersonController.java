@@ -28,20 +28,17 @@ public class PersonController {
     @GetMapping
     public ResponseEntity<?> getAll(@RequestParam(name = "id",required = false)Integer id,
                                     @RequestParam(name = "code",required = false)String code,
-                                    @RequestParam(name = "page",required = false)Integer page,
+                                    @RequestParam(name = "page",required = false)Integer pg,
                                     @RequestParam(name = "search",required = false)String query,
                                     HttpServletRequest request){
         if(null!=id)
             return ResponseEntity.ok(kus.getResponse(request,origin,service.getById(id),HttpStatus.OK));
         if(null!=code)
             return ResponseEntity.ok(kus.getResponse(request,origin,service.findByKunduCode(code),HttpStatus.OK));
-        if(null!=page){
-            Pageable pageable = PageRequest.of(page,50);
-            return ResponseEntity.ok(kus.getResponse(request,origin,service.getPeoplePages(pageable),HttpStatus.OK));
-        }
         if(null!=query)
             return ResponseEntity.ok(kus.getResponse(request,origin,service.searchPerson(query),HttpStatus.OK));
-        throw new KunduException(origin,"Kundu-api at your command",HttpStatus.PARTIAL_CONTENT);
+        Pageable page = pg != null ? PageRequest.of(pg, 100) : PageRequest.of(0, 100);
+        return ResponseEntity.ok(kus.getResponse(request,origin,service.getPeoplePages(page),HttpStatus.OK));
     }
 
     @GetMapping("/search")
