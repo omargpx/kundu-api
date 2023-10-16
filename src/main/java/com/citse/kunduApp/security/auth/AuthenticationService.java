@@ -128,7 +128,7 @@ public class AuthenticationService {
         username = jwtService.extractUsername(refreshToken);
         if (username != null) {
             var user = this.userRepo.findByUsername(username)
-                    .orElseThrow();
+                    .orElseThrow(()-> new KunduException(Services.AUTH_SERVICE.name(), "User by username not found",HttpStatus.NOT_FOUND));
             if (jwtService.isTokenValid(refreshToken, user)) {
                 var accessToken = jwtService.generateRefreshToken(user);
                 tokenRepo.deleteTokensByUserId(user.getId());

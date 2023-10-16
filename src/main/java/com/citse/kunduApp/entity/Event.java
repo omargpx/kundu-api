@@ -35,7 +35,8 @@ public class Event implements Serializable {
     private EventType typeEvent;
     @Column(name = "fe_execution")
     private LocalDateTime date;
-
+    @Column(name = "status")
+    private boolean status;
     @JsonIgnoreProperties({"events","groups","father"})
     @ManyToOne
     @JoinColumn(name = "fk_entity_id")

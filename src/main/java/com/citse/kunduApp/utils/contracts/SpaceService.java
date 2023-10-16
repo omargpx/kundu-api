@@ -2,18 +2,12 @@ package com.citse.kunduApp.utils.contracts;
 
 import com.citse.kunduApp.entity.*;
 import com.citse.kunduApp.exceptions.KunduException;
+import com.citse.kunduApp.repository.ListenerDao;
 import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.repository.SpaceDao;
-import com.citse.kunduApp.repository.ListenerDao;
 import com.citse.kunduApp.repository.UserDao;
 import com.citse.kunduApp.utils.models.Services;
 import io.agora.media.RtcTokenBuilder2;
-import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -22,10 +16,19 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+/**
+ * Space Service Class.
+ */
 @Service
 @RequiredArgsConstructor
 public class SpaceService {
-
     //region attributes
     private final UserDao userRepo;
     private final SpaceDao spaceRepo;
@@ -37,32 +40,32 @@ public class SpaceService {
     //endregion
 
     @Transactional
-    public Space create(Space space, Integer userId){
+    public Space create(Space space, Integer userId) {
         var user = userRepo.findById(userId).orElse(null);
-        if(user==null)
+        if (user == null)
             throw new RuntimeException("User not found");
 
         RtcTokenBuilder2 token = new RtcTokenBuilder2();
-        int timestamp = (int)(System.currentTimeMillis() / 1000 + 3600);
+        int timestamp = (int) (System.currentTimeMillis() / 1000 + 3600);
         String codeRoom = kus.SecureCode("KS");
-        String tokenRoom = token.buildTokenWithUid(appId,appCertificate,codeRoom,0,
-                RtcTokenBuilder2.Role.ROLE_PUBLISHER,timestamp,timestamp);
+        String tokenRoom = token.buildTokenWithUid(appId, appCertificate, codeRoom, 0,
+          RtcTokenBuilder2.Role.ROLE_PUBLISHER, timestamp, timestamp);
         var spaceSave = Space.builder()
-                .name(space.getName())
-                .code(codeRoom)
-                .creation(LocalDateTime.now())
-                .token(tokenRoom)
-                .moderator(user)
-                .build();
+          .name(space.getName())
+          .code(codeRoom)
+          .creation(LocalDateTime.now())
+          .token(tokenRoom)
+          .moderator(user)
+          .build();
         return spaceRepo.save(spaceSave);
     }
 
-    public void applyJoin(Space space, User user, String uuId){
+    public void applyJoin(Space space, User user, String uuId) {
         var subscriber = Listener.builder()
-                .space(space)
-                .uuid(uuId)
-                .userSpace(user)
-                .build();
+          .space(space)
+          .uuid(uuId)
+          .userSpace(user)
+          .build();
         listenerRepo.save(subscriber);
     }
 
@@ -72,44 +75,45 @@ public class SpaceService {
         return spaceRepo.save(space);
     }
 
-    public Space getSpaceById(Integer id){
+    public Space getSpaceById(Integer id) {
         Optional<Space> space = spaceRepo.findById(id);
-        if(space.isEmpty())
+        if (space.isEmpty())
             throw new KunduException(Services.SPACE_SERVICE.name(), "space not found", HttpStatus.NOT_FOUND);
         return space.get();
     }
 
-    public List<Space> historySpacesFromUser(int userId){
+    public List<Space> historySpacesFromUser(int userId) {
         Optional<User> user = userRepo.findById(userId);
-        if(user.isEmpty())
+        if (user.isEmpty())
             throw new KunduException(Services.SPACE_SERVICE.name(), "user not found", HttpStatus.NOT_FOUND);
         return spaceRepo.findAllByStatusIsFalseAndModerator(user.get());
     }
 
-    public List<Space> getSpacesAround(int userId){
-        userRepo.findById(userId).orElseThrow();
+    public List<Space> getSpacesAround(int userId) {
+        userRepo.findById(userId)
+          .orElseThrow(() -> new KunduException(Services.SPACE_SERVICE.name(), "User not found", HttpStatus.NOT_FOUND));
         List<Space> recommendSpaces = new ArrayList<>(findFriendsSpaces(userId));
-        if(recommendSpaces.isEmpty())
-             recommendSpaces.addAll(getListSpaces(0,7));
-        recommendSpaces.addAll(getListSpaces(0,3));
+        if (recommendSpaces.isEmpty())
+            recommendSpaces.addAll(getListSpaces(0, 7));
+        recommendSpaces.addAll(getListSpaces(0, 3));
         return recommendSpaces;
     }
 
     /* Filter friend spaces
-    * only return spaces that nonNull objects
-    * */
-    private List<Space> findFriendsSpaces(Integer userId){
-        Person me = personRepo.findById(userId).orElseThrow();
+     * only return spaces that nonNull objects
+     * */
+    private List<Space> findFriendsSpaces(Integer userId) {
+        Person me = personRepo.findById(userId)
+          .orElseThrow(() -> new KunduException(Services.SPACE_SERVICE.name(), "Person not found", HttpStatus.NOT_FOUND));
         return me.getFollowing().stream()
-                .map(Follow::getFollowed)
-                .map(friend -> spaceRepo.findByStatusIsTrueAndModerator(User.builder().id(friend.getId()).build()))
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
+          .map(Follow::getFollowed)
+          .map(friend -> spaceRepo.findByStatusIsTrueAndModerator(User.builder().id(friend.getId()).build()))
+          .filter(Objects::nonNull)
+          .collect(Collectors.toList());
     }
 
-    public List<Space> getListSpaces(int page, int size){
+    public List<Space> getListSpaces(int page, int size) {
         Pageable order = PageRequest.of(page, size);
         return spaceRepo.findRandomSpacesWithStatusTrue(order);
     }
-
 }
