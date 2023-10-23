@@ -12,6 +12,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @Entity
@@ -44,4 +45,17 @@ public class Space implements Serializable {
     @JsonIgnore
     @OneToMany(mappedBy = "space")
     private List<Listener> audience;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Space space = (Space) o;
+        return Objects.equals(id, space.id); // o compara otros campos únicos si no es el id
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 }

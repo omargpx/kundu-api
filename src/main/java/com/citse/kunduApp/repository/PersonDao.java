@@ -22,6 +22,8 @@ public interface PersonDao extends JpaRepository<Person,Integer> {
     @Query("SELECT p FROM Person p LEFT JOIN p.userDetail u WHERE LOWER(p.name) LIKE LOWER(CONCAT('%',:query,'%'))" +
             "OR LOWER(u.username) LIKE LOWER(CONCAT('%',:query,'%'))")
     List<Person> searchByFullNameOrNickname(@Param("query")String query,Pageable pageable);
+    @Query("SELECT p FROM Person p LEFT JOIN FETCH p.following WHERE p.id = :userId")
+    List<Person> findPersonWithFollowingById(@Param("userId") Integer userId);
     Page<Person> findAllBy(Pageable pageable);
     @Query("SELECT DISTINCT p FROM Person p WHERE p.id NOT IN " +
             "(SELECT f.followed.id FROM Follow f WHERE f.follower.id = :id)")
