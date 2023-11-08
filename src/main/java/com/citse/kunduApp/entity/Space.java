@@ -27,6 +27,8 @@ public class Space implements Serializable {
     private Integer id;
     @Column(name = "no_space")
     private String name;
+    @Column(name = "desc_space")
+    private String description;
     @Column(name = "fe_creation")
     private LocalDateTime creation; //TODO:change to DATETIME and after 5 hours from creation delete space
     @Column(name = "co_space")
@@ -51,7 +53,7 @@ public class Space implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Space space = (Space) o;
-        return Objects.equals(id, space.id); // o compara otros campos únicos si no es el id
+        return Objects.equals(id, space.id); // 'o' compare other unique fields if not the id
     }
 
     @Override

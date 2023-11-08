@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Jonás decidió comprar un boleto para ir a Tarsis en lugar de ir a Nínive como Dios se lo había mandado?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque no quería obedecer a Dios",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque prefería visitar a su familia en Tarsis",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque quería hacer turismo en Tarsis",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque no tenía suficiente dinero para ir a Nínive",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué sucedió en el barco mientras Jonás estaba dormido?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Hubo una gran tempestad",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Los marineros tuvieron una fiesta",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Jonás predicó a los marineros",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los pasajeros decidieron regresar a puerto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por cuántos días estuvo Jonás dentro del estómago del gran pez?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Tres días",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Un día",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Una semana",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un mes",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le ordenó Jonás a los marineros cuando supo que era por causa suya que había la tempestad?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que lo echaran al mar",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Que lo llevaran de regreso a puerto",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que le dieran dinero",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que lo encerraran en la bodega del barco",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo el pez después de vomitar a Jonás en tierra firme?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se fue nadando hacia lo profundo del mar",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se convirtió en piedra",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se quedó esperando a Jonás en la playa",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se fue y cumplió lo que Dios le había dicho",
+        "correct": true
+      }
+    ]
+  }
+]

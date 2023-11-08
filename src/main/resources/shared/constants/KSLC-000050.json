@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hizo Pablo en Tesalónica durante tres días?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Predicó a un grupo de personas acerca de las Escrituras.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se reunió con los judíos para discutir sobre sus enseñanzas.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Escribió cartas a los creyentes en la ciudad.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se unió a los alborotadores para confundir a la gente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué actitud tuvieron los bereanos hacia las enseñanzas de Pablo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se burlaron de él y lo rechazaron.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Estaban más interesados y recibieron la Palabra de Dios de todo corazón.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Lo ignoraron por completo y no prestaron atención.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le pidieron que se vaya de la ciudad y no vuelva nunca más.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hacían los bereanos cuando Pablo les enseñaba?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se dormían y no prestaban atención.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Verificaban lo que él decía con las escrituras.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se levantaban y se iban sin escuchar el resto del mensaje.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Interrumpían constantemente para hacerle preguntas.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál fue la reacción de los judíos en Tesalónica hacia las enseñanzas de Pablo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Escucharon atentamente y aceptaron su mensaje.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se unieron a él para apoyarlo frente a los alborotadores.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se opusieron y causaron disturbios en la ciudad.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Le pidieron a Pablo que se quedara en la ciudad para enseñarles más.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuánto tiempo estuvo Pablo predicando en Tesalónica antes de viajar a Berea?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Un día entero.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Una semana completa.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Tres días.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Un mes entero.",
+        "correct": false
+      }
+    ]
+  }
+]

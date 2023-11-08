@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
 @Data
@@ -35,4 +36,9 @@ public class Member implements Serializable {
     @ManyToOne
     @JoinColumn(name = "fk_group_id")
     private Group group;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "member")
+    private List<Assist> assists;
+
 }

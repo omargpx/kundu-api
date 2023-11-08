@@ -1,19 +1,18 @@
 package com.citse.kunduApp.utils.logic;
 
-import com.citse.kunduApp.entity.Book;
-import com.citse.kunduApp.entity.Group;
-import com.citse.kunduApp.entity.Lesson;
-import com.citse.kunduApp.entity.Session;
+import com.citse.kunduApp.entity.*;
 import com.citse.kunduApp.exceptions.KunduException;
-import com.citse.kunduApp.repository.BookDao;
-import com.citse.kunduApp.repository.LessonDao;
-import com.citse.kunduApp.repository.SessionDao;
+import com.citse.kunduApp.repository.*;
 import com.citse.kunduApp.utils.contracts.ThemesContentService;
 import com.citse.kunduApp.utils.models.Services;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -29,6 +28,10 @@ public class ThemesContentImp implements ThemesContentService {
     private LessonDao lessonRepo;
     @Autowired
     private SessionDao sessionRepo;
+    @Autowired
+    private MemberDao memberRepo;
+    @Autowired
+    private AssistDao assistRepo;
 
     @Override
     public void subscribe(int phase, Group group) {
@@ -102,5 +105,17 @@ public class ThemesContentImp implements ThemesContentService {
         if(book.isPresent())
             return book;
         throw new KunduException(Services.LIBRARY_SERVICE.name(),"Book with id: '"+id+"' not found", HttpStatus.NOT_FOUND);
+    }
+
+    @Override
+    public boolean verifyQuizUser(String code, Integer userId) throws IOException {
+        var member = memberRepo.findByPerson(Person.builder().id(userId).build());
+        var session = sessionRepo.findByLessonCode(code);
+        if(member.isEmpty() || session==null)
+            throw new KunduException(Services.LIBRARY_SERVICE.name(),"Member or lesson doesn't exists",HttpStatus.NOT_FOUND);
+        var assist = assistRepo.findByMemberAndSession(member.get(),session);
+        if (null!=assist && assist.isQuiz())
+            throw new KunduException(Services.LIBRARY_SERVICE.name(),"Quiz already performed",HttpStatus.NOT_FOUND);
+        return true;
     }
 }

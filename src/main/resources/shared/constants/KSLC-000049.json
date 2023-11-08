@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué suceso desencadenó la liberación de la muchacha poseída por un espíritu maligno?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Pablo y Silas la tocaron y oraron por ella",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pablo ordenó al espíritu maligno que saliera de ella en el nombre de Jesucristo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "La muchacha se liberó por su cuenta al escuchar la Palabra de Dios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los amos de la muchacha la liberaron de su posesión",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué reacción tuvieron los amos de la muchacha después de que esta fuese liberada?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se alegraron y agradecieron a Pablo y Silas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se molestaron y llevaron a Pablo y Silas ante las autoridades con acusaciones falsas",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se arrepintieron de sus malas acciones y se unieron a Pablo y Silas en su predicación",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Decidieron dejar sus malas prácticas y seguir a Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hicieron Pablo y Silas después de ser encarcelados y azotados?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se lamentaron y lloraron toda la noche",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Comenzaron a planear su escape de la cárcel",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Cantaron alabanzas a Dios en medio de la prisión",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Murmuraron y se quejaron por su mala suerte",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionó el carcelero cuando se dio cuenta de que los presos no habían escapado durante el terremoto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se enfureció y buscó castigar a Pablo y Silas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se sintió aliviado y agradecido con los presos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Intentó quitarse la vida pensando que sería castigado",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Llamó a las autoridades para informarles de la situación",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué mensaje le dieron Pablo y Silas al carcelero y su familia cuando les preguntaron cómo ser salvos?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que adoraran a Dios en secreto",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que huyeran de la ciudad y comenzaran una nueva vida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que creyeran en el Señor Jesús y serían salvos ellos y su familia",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que buscaran venganza contra sus opresores",
+        "correct": false
+      }
+    ]
+  }
+]

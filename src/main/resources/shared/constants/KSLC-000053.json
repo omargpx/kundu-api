@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál era la ocupación principal de Juan antes de convertirse en discípulo de Jesús?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Carpintero",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pescador",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Agricultor",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Comerciante",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué intentó hacer Juan y su hermano en una ocasión cuando Jesús no fue recibido en una ciudad?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Curar a los enfermos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pedir fuego del cielo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Orar por la ciudad",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Hacer milagros",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué libro escribió Juan que relata sus experiencias?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El Libro de los Milagros",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El Evangelio según Juan",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Los Hechos de los Apóstoles",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Las Cartas a las Iglesias",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿A qué lugar fue llevado Juan cuando lo tomaron preso por predicar el evangelio?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Roma",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Jerusalén",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Patmos",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Atenas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se llama el libro que Juan escribió mientras estaba en la isla de Patmos?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Los Profetas Menores",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Las Epístolas Generales",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Los Salmos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Apocalipsis",
+        "correct": true
+      }
+    ]
+  }
+]

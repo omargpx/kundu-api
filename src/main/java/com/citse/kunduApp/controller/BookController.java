@@ -1,6 +1,7 @@
 package com.citse.kunduApp.controller;
 
 import com.citse.kunduApp.entity.Group;
+import com.citse.kunduApp.exceptions.KunduException;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.contracts.ThemesContentService;
 import com.citse.kunduApp.utils.models.Services;
@@ -52,7 +53,10 @@ public class BookController {
     }
 
     @GetMapping(value = "/forms", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> handleInfo(@RequestParam(name = "id") String code) throws IOException {
+    public ResponseEntity<?> handleInfo(@RequestParam(name = "code") String code,
+                                        @RequestParam(name = "id") Integer id) throws IOException {
+        if(!service.verifyQuizUser(code,id))
+            throw new KunduException(Services.LIBRARY_SERVICE.name(), "something wrong",HttpStatus.UNAVAILABLE_FOR_LEGAL_REASONS);
         Resource resource = resourceLoader.getResource("classpath:/shared/constants/"+code+".json");
         String jsonContent = new String(resource.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
         return new ResponseEntity<>(jsonContent, HttpStatus.PARTIAL_CONTENT);

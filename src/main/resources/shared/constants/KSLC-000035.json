@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué alimentos decidieron no comer Daniel y sus amigos en el palacio del rey?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Carne de cerdo y alimentos ricos en grasa.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Frutas y verduras frescas.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pan y vino.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dulces y postres variados.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál fue el resultado de no comer la comida del rey durante diez días?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Daniel y sus amigos enfermaron gravemente.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Daniel y sus amigos se vieron más saludables y brillantes.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Daniel y sus amigos se volvieron más débiles y cansados.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Daniel y sus amigos se volvieron más perezosos y descuidados.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué el rey Nabucodonosor quiso tener a Daniel en su corte real?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque era de su mismo linaje.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque era el más alto de estatura.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque lo encontró diez veces más sabio que los demás.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque era muy hábil en la música.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Por cuánto tiempo estuvo Daniel comiendo solo legumbres y bebiendo agua?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Un año entero.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dos semanas.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Diez días.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Tres meses.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se comportó Daniel en relación a su fe en Dios mientras estuvo lejos de su hogar?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La ocultó y la negó.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La demostró siempre, sin avergonzarse.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "La abandonó por completo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La mostró solo en ocasiones especiales.",
+        "correct": false
+      }
+    ]
+  }
+]

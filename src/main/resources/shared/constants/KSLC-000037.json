@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cómo aprendía Jesús las enseñanzas de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Estudiando la Biblia y la naturaleza.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Asistiendo a la escuela de Rabinos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "A través de sus padres únicamente.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Mediante la observación de otros niños.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo crecía Jesús de acuerdo a la enseñanza?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "En estatura, en conocimiento y en popularidad.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "En estatura, en sabiduría y en la gracia de Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "En riqueza, en conocimiento y en bondad.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "En popularidad, en riqueza y en fe.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hizo Jesús cuando sus padres lo encontraron en el templo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Estaba jugando con otros niños.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Estaba enseñando a los maestros de la Biblia.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Estaba durmiendo en un rincón.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Estaba rezando en silencio.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Quién se preocupaba más por el crecimiento espiritual de Jesús?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "José, su padre.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Los maestros del templo.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Los niños del vecindario.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "María, su madre.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué le gustaba hacer a Jesús para aprender?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Leer libros de historia.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Jugar al aire libre.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Observar la creación y la naturaleza.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Escuchar música religiosa.",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -60,11 +60,6 @@ public class GroupController {
         return ResponseEntity.ok(kus.getResponse(request,origin,service.getSessionFromGroupByCode(code),HttpStatus.OK));
     }
 
-    @PutMapping("/{code}/lessons")
-    public void updateStatusSession(@RequestParam("code")String codeLesson,
-                                    @PathVariable String code){
-        service.updateSession(code,codeLesson);
-    }
 
     @GetMapping("/{code}/members")
     public ResponseEntity<?> getListMembers(@PathVariable String code, HttpServletRequest request){

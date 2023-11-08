@@ -133,7 +133,7 @@ public class PersonImp implements PersonService {
 
     @Override
     @Transactional
-    public List<SimplePerson> searchPerson(String query) {//TODO: load only necessary data...
+    public List<SimplePerson> searchPerson(String query) {
         Pageable pageable = PageRequest.of(0, 5);
         List<Person> matchingUsers = repo.searchByFullNameOrNickname(query,pageable);
         return matchingUsers.stream().map(this::personToDTO).toList();

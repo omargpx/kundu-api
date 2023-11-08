@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Satanás acusó a Job delante de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Job se olvidó de obedecer a Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Job adoraba a otros dioses",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque creía que Job solo obedecía por las bendiciones de Dios",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque Job había dejado de hacer sus cultos en el hogar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo reaccionó Job ante las pruebas de Satanás?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Renunció a su fe en Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Maldijo a Dios por las pruebas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Permaneció fiel a Dios y no desobedeció su Palabra",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Decidió seguir a otros dioses",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál fue el resultado de las pruebas de Job?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Perdió su fe en Dios",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Murió en la pobreza",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dios le dio el doble de lo que tenía antes",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se alejó de su familia",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué cualidades demostró Job durante las pruebas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Desobediencia y renuncia",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Obediencia y fidelidad a Dios",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Maldición y traición",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Falta de interés en su familia",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué bendición recibió Job al final de sus pruebas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Continuó en la pobreza",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Perdió a su familia para siempre",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Recibió el doble de lo que tenía antes y gozó de felicidad",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se enfermó y murió",
+        "correct": false
+      }
+    ]
+  }
+]

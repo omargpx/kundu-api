@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué estaba haciendo Eutico cuando se cayó de la ventana?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Estaba escuchando a Pablo hablar.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Estaba jugando con los demás jóvenes.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Estaba tratando de escapar de la reunión.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Estaba cantando una canción.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Pablo cuando Eutico cayó del tercer piso?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se asustó y corrió a buscar ayuda.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Bajó rápidamente a socorrerlo.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Lo abrazó y anunció que estaba vivo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se quedó en silencio, sin saber qué hacer.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué la gente dejó de estar adormilada después de que Eutico cayó?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque se asustaron con el ruido de la caída.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque Pablo les llamó la atención.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque el ambiente se volvió tenso.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque decidieron irse de la reunión.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionaron las personas ante la noticia de que Eutico estaba vivo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Estaban escépticos y no le creyeron.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se sintieron aliviados y emocionados.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Estaban enojados y confundidos.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se fueron rápidamente del lugar.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo Pablo después de que Eutico volvió a la vida?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Continuó con su discurso.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Decidió cancelar la reunión.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Salió del lugar para hablar con la gente.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se sentó a consolar a los que estaban llorando.",
+        "correct": false
+      }
+    ]
+  }
+]

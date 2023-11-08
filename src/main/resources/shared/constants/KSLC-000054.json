@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué enseñaba Dios a Adán y Eva durante sus conversaciones?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Cómo cuidar de todas las criaturas del jardín",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Cómo construir un nuevo hogar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Cómo preparar comidas deliciosas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Cómo tejer ropa con hojas de árbol",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Adán y Eva ya no podían conversar cara a cara con Dios después de desobedecerle?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque perdieron la capacidad de hablar",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque el pecado separó a los seres humanos de Dios",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque se escondieron de Dios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque estaban ocupados con otras tareas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué solución encontró Dios para seguir comunicándose con sus hijos después de la desobediencia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Enviar cartas a través de ángeles",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Utilizar un intermediario",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Crear una línea telefónica divina",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Hablar a través de señales en el cielo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál era el momento más esperado del día para Adán y Eva?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La hora de la cena",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La hora de la siesta",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Cuando se encontraban con los ángeles",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Cuando Dios visitaba a Adán y Eva",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué sucedió después de que Adán y Eva desobedecieron a Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Fueron castigados con enfermedades",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se convirtieron en ángeles",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Fueron separados de Dios por el pecado",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Recibieron más poderes divinos",
+        "correct": false
+      }
+    ]
+  }
+]

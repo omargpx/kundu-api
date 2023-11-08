@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué le propuso Satanás a Jesús cuando lo llevó a lo alto del templo de la ciudad santa?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Convertir las piedras en pan.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Saltar desde lo alto y ser salvado por los ángeles de Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Adorar a Satanás y obtener todas las riquezas del mundo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Conquistar la ciudad y gobernar como rey.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué contestó Jesús cuando Satanás le mostró todo lo que estaba alrededor y le ofreció todo a cambio de adorarlo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "¡Vete, Satanás! Porque escrito está: Adora al Señor tu Dios y solo a Él servirás.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Aceptó su oferta pero con condiciones.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dudó y le pidió tiempo para pensarlo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le dijo que ya tenía todo lo que necesitaba y no le interesaba más.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le respondió Jesús a Satanás cuando le instó a convertir las piedras en pan?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Aceptó y realizó el milagro para alimentarse.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se negó y citó un pasaje bíblico sobre la dependencia de la palabra de Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se mostró indeciso y pidió más pruebas de su identidad.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Decidió usar las piedras para construir un refugio para los necesitados.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál fue la respuesta de Jesús cuando Satanás lo llevó a una montaña muy alta y le mostró todas las riquezas del mundo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se inclinó y prometió adorarlo a cambio de las riquezas.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Le dijo que él ya tenía suficiente y no necesitaba más.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le respondió firmemente que solo adoraría al Señor su Dios.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Aceptó las riquezas pero se comprometió a ayudar a los pobres.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué respondió Jesús a Satanás cuando lo instó a saltar desde lo alto del templo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Aceptó y saltó confiando en la protección de Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se negó y citó un pasaje bíblico sobre no poner a prueba a Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Decidió saltar pero pidió a Satanás que lo acompañara.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Decidió no hacer nada y se retiró del lugar.",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Quién bautizó a Jesús en las aguas del río Jordán?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Juan el Bautista",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Pedro",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pablo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Mateo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué sucedió en el momento en que Jesús salió del agua después de ser bautizado?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se abrió el cielo y apareció una luz resplandeciente en forma de paloma.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se escuchó una voz que venía del río Jordán.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Una nube oscura cubrió el cielo.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La gente se dispersó rápidamente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué se sorprendió Juan el Bautista al ver a Jesús entre la multitud?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Había predicado acerca de él anteriormente.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "No lo conocía en absoluto.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pensó que era un impostor.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Le recordó a un amigo de la infancia.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué forma tomó la luz que apareció en el cielo durante el bautismo de Jesús?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Una paloma",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Una estrella",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Un círculo brillante",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un arco iris",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Juan el Bautista se puso nervioso cuando Jesús le pidió que lo bautizara?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Había reconocido que Jesús era el Hijo de Dios.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "No quería sumergirse en el agua fría.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "No le gustaba el Señor Jesús.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pensó que era una broma.",
+        "correct": false
+      }
+    ]
+  }
+]

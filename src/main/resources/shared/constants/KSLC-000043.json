@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Dónde se encontraba Jesús cuando pidió a Simón que echara la red para pescar?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "En una montaña",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "En un río",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "En el lago Genesaret",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "En el desierto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué le dijo Simón a Jesús cuando le pidió que echara la red después de haber pescado toda la noche sin éxito?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Simón le dijo que no haría caso a su petición.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Simón le respondió que obedecería su palabra.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Simón le dijo que estaba ocupado y no podía ayudar.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Simón le dijo que lo intentaría más tarde.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué pasó cuando Simón y sus compañeros echaron la red?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No lograron pescar nada.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La red se rompió por la cantidad de peces capturados.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Pescaron solo unos pocos peces.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los peces escaparon antes de ser atrapados.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué dijo Jesús que Simón Pedro iba a pescar a partir de ese momento?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Jesús dijo que pescaría solo peces.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Jesús dijo que pescaría más peces de los que había capturado.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Jesús dijo que pescaría hombres.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús dijo que no pescaría más.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hicieron Simón Pedro y los demás después de la sorprendente pesca?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se quedaron en la orilla sin hacer nada.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se fueron del lugar sin decir nada.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le pidieron a Jesús que se apartara de ellos.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Festejaron y celebraron la pesca milagrosa.",
+        "correct": false
+      }
+    ]
+  }
+]

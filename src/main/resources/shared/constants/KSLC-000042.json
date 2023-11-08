@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué María se acercó a Jesús durante la boda?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Para contarle un chisme sobre los invitados",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Para pedirle que multiplicara el pan",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Para informarle que se había agotado el vino",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Para preguntarle sobre sus discípulos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué les pidió Jesús a los sirvientes que hicieran?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que tocaran música para los invitados",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que llenaran las tinajas con vino",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que llenaran las tinajas con agua",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que recogieran comida de los invitados",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué impresión tuvieron los invitados sobre el vino?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Estaban confundidos y enojados",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pensaron que era una broma",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Elogiaron su sabor y calidad",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Decidieron no beberlo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hicieron los criados cuando los invitados preguntaron sobre el vino?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Inventaron una historia sobre su origen",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Ignoraron las preguntas de los invitados",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Contaron sobre el milagro que Jesús hizo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se disculparon por la falta de vino",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué sucedió cuando los invitados buscaron a Jesús?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Lo encontraron enseñando a los discípulos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se dieron cuenta de que se había ido sin decir adiós",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Lo vieron tomando vino con los invitados",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Lo hallaron orando en privado",
+        "correct": false
+      }
+    ]
+  }
+]

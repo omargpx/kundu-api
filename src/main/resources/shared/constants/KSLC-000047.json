@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hizo Felipe después de que el Señor le dijo que fuera al sur por el camino del desierto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Predicó sobre Jesucristo a los tesoros de la reina de los etíopes.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Encontró un etíope que estaba leyendo la Palabra de Dios en un carro.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Hizo exactamente lo que el Señor le dijo y no encontró a nadie en su camino.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Corrió al lado del carro del etíope y le preguntó si entendía lo que leía.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hacía el etíope mientras viajaba en su carro?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Estaba dormido y no hacía nada.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Estaba contando su dinero.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Leía la Palabra de Dios, específicamente un texto del profeta Isaías.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Estaba escribiendo una carta a la reina de los etíopes.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué el etíope no entendía lo que leía?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque era analfabeto y no sabía leer.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque el texto estaba en un idioma que no comprendía.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque nadie le había explicado el significado del texto.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque el texto estaba dañado y no se podía leer.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Felipe cuando el etíope expresó su deseo de ser bautizado?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Le dijo que no era el momento adecuado para el bautismo.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Le explicó que primero debía aprender más sobre la Biblia.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le preguntó si estaba dispuesto a renunciar a su riqueza antes de ser bautizado.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Bautizó al etíope después de que este afirmara su fe en Jesucristo como el Hijo de Dios.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué sucedió después de que Felipe bautizó al etíope?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El etíope continuó su viaje solo, sin experimentar ningún cambio.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Felipe continuó viajando con el etíope y predicándole más sobre la Biblia.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "El etíope nunca más vio a Felipe, pero continuó su viaje feliz y transformado por la fe en Jesucristo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "El etíope decidió renunciar a su fe después del bautismo.",
+        "correct": false
+      }
+    ]
+  }
+]

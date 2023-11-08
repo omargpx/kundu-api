@@ -19,7 +19,6 @@ public interface GroupService {
     Group applyJoinGroup(String code, String kunduCode);
     Page<Group> getGroupPages(Pageable pageable);
     List<Session> getSessionFromGroupByCode(String code);
-    void updateSession(String code, String codeLesson);
 
     List<?> getMembersByGroupCode(String code);
 }

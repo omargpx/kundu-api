@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué sucedió con la casa del hombre prudente durante la tormenta?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se mantuvo firme debido a su construcción sobre la roca.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se derrumbó debido a su construcción sobre la arena.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Fue arrastrada por los vientos debido a su construcción sobre la arena.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Fue fortalecida por los vientos debido a su construcción sobre la roca.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué representan la roca y la arena en la parábola de Jesús?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "La fe y la duda respectivamente.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "La pobreza y la riqueza respectivamente.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La sabiduría y la ignorancia respectivamente.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La felicidad y la tristeza respectivamente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le sucedió a la casa del hombre insensato durante la tormenta?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Permaneció inquebrantable debido a su construcción sobre la arena.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se mantuvo firme debido a su construcción sobre la roca.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Fue arrastrada por los vientos debido a su construcción sobre la arena.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Fue fortalecida por los vientos debido a su construcción sobre la roca.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué tipo de superficie es la roca según la parábola?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Una superficie inestable.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Una superficie peligrosa.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Una superficie estable.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Una superficie frágil.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es la enseñanza principal de la parábola de la casa construida sobre la roca y la arena?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "La importancia de construir casas seguras.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La necesidad de elegir buenos materiales de construcción.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La importancia de tener una base firme en la fe y la vida.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "La necesidad de protegerse de las tormentas naturales.",
+        "correct": false
+      }
+    ]
+  }
+]

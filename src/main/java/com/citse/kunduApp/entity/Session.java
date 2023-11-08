@@ -1,6 +1,7 @@
 package com.citse.kunduApp.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @Entity
@@ -33,4 +35,8 @@ public class Session implements Serializable {
     @ManyToOne
     @JoinColumn(name = "fk_group_id", nullable = false)
     private Group groupSession;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "session")
+    private List<Assist> assists;
 }

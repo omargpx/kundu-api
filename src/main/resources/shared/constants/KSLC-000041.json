@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Juan el Bautista dudó si Jesús era el Mesías?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque había oído rumores de que Jesús no realizaba milagros.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque estaba en la cárcel y se sentía abandonado.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque quería confirmar si Jesús cumplía con las profecías bíblicas.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque no creía en la palabra de los mensajeros.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué respuesta dio Jesús a los mensajeros de Juan el Bautista?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que él era el Mesías esperado por el pueblo.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que era el hijo de Dios enviado para salvar a la humanidad.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que los ciegos ven, los cojos andan, los leprosos son limpiados, los sordos oyen, los muertos son resucitados y a los pobres es anunciado el evangelio.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que no podía dar respuesta en ese momento.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le pasó a Juan el Bautista mientras estuvo en la cárcel?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Fue liberado por sus seguidores.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Perdió la fe en Dios.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Comenzó a dudar si Jesús era el Mesías esperado.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Recibió un mensaje divino de esperanza.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Por qué Zacarías, el padre de Juan el Bautista, quedó mudo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque se negó a obedecer una orden divina.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque no creía en los milagros de Dios.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque dudaba de la posibilidad de tener un hijo en su vejez.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque se enojó con Dios por las dificultades que enfrentaba.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué mensaje transmitió Juan el Bautista luego de la respuesta de Jesús?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que ya no creía en Jesús.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que la Biblia es la única fuente de verdad.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que confirmó que lo que decía la Biblia era verdad.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que era necesario seguir esperando al verdadero Mesías.",
+        "correct": false
+      }
+    ]
+  }
+]

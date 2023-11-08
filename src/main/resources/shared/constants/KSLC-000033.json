@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué le dijo Dios a Jeremías cuando este le respondió que era un muchacho que no sabía hablar bien?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No digas que eres un muchacho, porque irás a donde yo te mande y dirás todo lo que yo te diga.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Eres mi elegido desde antes que nacieras.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "No importa si no sabes hablar bien, yo te enseñaré.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Puedes escoger a alguien más adecuado si no te sientes capaz.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Jeremías se mostró temeroso de predicar?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No creía en la palabra de Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se sentía demasiado joven e inexperto.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "No tenía el apoyo de su familia.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Tenía miedo de ser rechazado por la gente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué promesa le hizo Dios a Jeremías para alentarlo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No sufriría ningún tipo de persecución.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Le daría riquezas y fama si obedecía.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Estaría con él para protegerlo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Haría que la gente le respetara y obedeciera.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué respuesta le dio Jeremías a Dios al escuchar su promesa?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Aceptó de inmediato la responsabilidad.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dudó de la protección divina.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Siguió temeroso pero dispuesto a obedecer.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Rechazó la tarea y huyó de Dios.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál es la lección principal de la historia de Jeremías?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La importancia de obedecer a los mayores.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La valentía de enfrentar los miedos con fe en Dios.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "La necesidad de hablar en público con seguridad.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La relevancia de tener habilidades especiales para servir a Dios.",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál era el mensaje principal que Isaías llevó al pueblo en medio de su sufrimiento?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Dios los salvaría si se quejaban lo suficiente.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dios se había olvidado de ellos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dios cumpliría su promesa de hacer su vida mejor si ellos se arrepentían.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No importaba lo que hicieran, Dios no los perdonaría.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué significa el nombre de Isaías?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El olvidado",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Salvador",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Jehová salva",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "El valiente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Según el texto, ¿cuál es el significado de la metáfora de la flor?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La fragilidad de la vida humana.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "La importancia de tener un jardín.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La necesidad de tener un florero en casa.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La importancia de regar las flores regularmente.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué les dijo Isaías a las personas que dudaban del cumplimiento de las promesas de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que Dios no cumpliría sus promesas.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que las promesas de Dios eran solo ilusiones.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que todo puede marchitarse, pero no las promesas divinas.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que deberían confiar en su propia fuerza en lugar de en Dios.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál era el mensaje que Isaías transmitía acerca del amor de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El amor de Dios es limitado y solo para los justos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Dios no recibe a nadie que esté sucio.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dios siempre está dispuesto a recibir y limpiar a aquellos que se arrepienten.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dios solo acepta a aquellos que nunca han pecado.",
+        "correct": false
+      }
+    ]
+  }
+]

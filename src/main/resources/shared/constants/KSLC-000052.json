@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Quién fue como un padre espiritual para Timoteo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Pablo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Loida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Eunice",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿A quién animaba Pablo a no avergonzarse del Evangelio?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Timoteo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Loida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Eunice",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Quién le contaba historias de la Biblia a Eunice?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Loida",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Pablo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Timoteo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿A quién pidió Pablo que apoyara la iglesia de Éfeso?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Timoteo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Loida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Eunice",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quién fue instruido en los caminos de la Palabra de Dios por su madre?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Timoteo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Loida",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pablo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Jesús",
+        "correct": false
+      }
+    ]
+  }
+]

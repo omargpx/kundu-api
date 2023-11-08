@@ -43,6 +43,7 @@ public class SpaceService {
         validateUser(userId);
         var spaceSave = Space.builder()
           .name(space.getName())
+          .description(space.getDescription())
           .code(kus.SecureCode("KS"))
           .creation(LocalDateTime.now())
           .token(generateTokenRoom())

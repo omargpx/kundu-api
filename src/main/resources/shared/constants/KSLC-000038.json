@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué nombre le dio Zacarías a su hijo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "a) Juan",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "b) Zacarías",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "c) José",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "d) Moisés",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Zacarías dudó cuando el ángel le dijo que tendría un hijo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "a) No creía en Dios.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "b) Él y su esposa eran muy mayores para tener un hijo.",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "c) No quería tener hijos.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "d) Pensó que el ángel se equivocó.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le sucedió a Zacarías cuando dudó del mensaje del ángel?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "a) Se quedó ciego.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "b) Se quedó sordo.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "c) Se quedó mudo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "d) Se desmayó.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué nombre querían que tuviera el hijo de Zacarías, según sus amigos y familiares?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "a) Juan",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "b) Zacarías",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "c) José",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "d) El pequeño Zacarías",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo recuperó Zacarías la capacidad de hablar?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "a) Al ver nacer a su hijo.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "b) Al escuchar la voz de su esposa.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "c) Al oír la voz de Dios.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "d) Al escuchar al ángel Gabriel de nuevo.",
+        "correct": false
+      }
+    ]
+  }
+]

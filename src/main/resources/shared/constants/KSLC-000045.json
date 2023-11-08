@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué los discípulos estaban tristes al principio del relato?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Jesús los había abandonado",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque no entendían lo que había sucedido con Jesús",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque estaban enojados con Jesús",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque no habían encontrado su cuerpo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué les sucedió a los discípulos cuando Jesús les explicaba las Escrituras?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se emocionaron mucho",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Sus corazones ardían",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se asustaron y huyeron",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No creyeron lo que les decía Jesús",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo reaccionaron los discípulos cuando Jesús les ofreció el pan?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Le agradecieron y lo comieron",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Lo rechazaron por miedo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Lo examinaron detenidamente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No hicieron nada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo reaccionaron los discípulos cuando Jesús desapareció de repente?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se asustaron y huyeron",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se alegraron y festejaron",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se quedaron asombrados",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Lo buscaron desesperadamente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿En qué aldea estaban los discípulos cuando se encontraron con Jesús?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Jerusalén",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Belén",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Emaús",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Nazaret",
+        "correct": false
+      }
+    ]
+  }
+]

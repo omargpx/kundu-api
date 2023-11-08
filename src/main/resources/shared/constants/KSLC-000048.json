@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué le sucedió a Saulo mientras viajaba hacia Damasco?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Una voz resplandeciente lo cubrió y cayó al suelo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se encontró con un grupo de cristianos amigables",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Un fuerte viento lo empujó hacia el suelo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un enjambre de abejas lo atacó en el camino",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué le ocurrió a los ojos de Saulo después de la experiencia con la luz?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Fue cubierto por una venda",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Quedó completamente ciego",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "No le sucedió nada a sus ojos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Empezaron a brillar intensamente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Quién sanó a Saulo de su ceguera?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Pedro",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Juan",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Ananías",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Judas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Saulo después de recuperar la vista?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Huyó de Damasco",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Continuó ciego pero empezó a predicar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Fue bautizado y se alimentó para tener fuerzas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se unió al grupo que había perseguido",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo reaccionaron los discípulos ante la conversión de Saulo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se alegraron y lo aceptaron inmediatamente",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Se mostraron escépticos y no le creyeron al principio",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Lo consideraron un milagro y lo alabaron",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Lo rechazaron y lo expulsaron de la comunidad",
+        "correct": false
+      }
+    ]
+  }
+]

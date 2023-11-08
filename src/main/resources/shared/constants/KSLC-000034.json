@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué le dijo Dios a Ezequiel que haga con los huesos secos?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que se los lleve a otro lugar.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que ore pidiendo por lluvia para los huesos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que les hable para que oigan la Palabra de Dios.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Que los ignore por completo.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué pasó una vez que Ezequiel comenzó a predicar la Palabra de Dios a los huesos secos?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se hundieron más en la tierra.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Empezaron a brillar intensamente.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Comenzaron a buscar entre sí para formar esqueletos.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Se convirtieron en polvo.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué faltaba para que los huesos estuvieran completamente vivos?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Los músculos.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La piel.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Los tendones y la carne.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Los órganos internos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué debía hacer Ezequiel para que los huesos secos vivieran?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Recogerlos uno por uno.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Darles comida y agua.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Orar pidiendo por el Espíritu Santo.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Nada, porque ya estaban vivos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué formaron los huesos secos una vez que recibieron el Espíritu Santo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Un río.",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Un gran edificio.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Un gran ejército.",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Un jardín.",
+        "correct": false
+      }
+    ]
+  }
+]

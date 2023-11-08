@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál patriarca fue el encargado de construir un barco grande para salvar a su familia y a los animales del diluvio?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Noé",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abrahán",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "José",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Quién fue el patriarca a quien Dios le pidió que saliera del lugar donde vivía e ir a una tierra que le mostraría?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abrahán",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "José",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál patriarca estuvo más cerca de Dios al punto de que su rostro reflejaba la luz de la gloria de Dios?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Moisés",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Abrahán",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "José",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál de los patriarcas fue descendiente de Noé?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abrahán",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "José",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quién de los patriarcas fue gobernador de Egipto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Isaac",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Abrahán",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "José",
+        "correct": true
+      }
+    ]
+  }
+]

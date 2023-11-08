@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué ocurrió durante el día de Pentecostés?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se escuchó un gran estruendo y los discípulos comenzaron a hablar en otras lenguas",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Los discípulos se reunieron para una cena especial",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Un grupo de personas desconocidas llegó a la casa de los discípulos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Los discípulos cantaron himnos de alabanza",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo reaccionaron algunas personas al escuchar a los discípulos hablar en otras lenguas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se maravillaron y se preguntaron qué significaba",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se asustaron y huyeron del lugar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se enojaron y comenzaron a insultar a los discípulos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se unieron a los discípulos para aprender a hablar en otras lenguas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué les dijo Pedro a las personas que pensaban que los discípulos estaban ebrios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que era el Espíritu Santo quien los hacía hablar así",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Que se calmaran y se fueran del lugar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Que los discípulos habían consumido vino nuevo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que los discípulos estaban realizando una representación teatral",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué les recomendó Pedro a las personas al oír la historia de Cristo?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Arrepentirse y bautizarse para recibir el Espíritu Santo",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Reunirse con los discípulos para más enseñanzas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Viajar a otros lugares y compartir la historia de Cristo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Olvidar lo sucedido y seguir con sus vidas como siempre",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo el Espíritu Santo por los discípulos durante el día de Pentecostés?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Les permitió hablar en lenguas que no conocían",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Les concedió la habilidad de sanar a los enfermos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Les dio poder para realizar milagros extraordinarios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Les enseñó nuevas canciones de alabanza",
+        "correct": false
+      }
+    ]
+  }
+]
