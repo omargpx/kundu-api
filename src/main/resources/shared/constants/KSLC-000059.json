@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué encontraron los niños en el bosque?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Nueces",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Manzanas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Flores",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Piedras",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Elena se preocupó al ver que los niños sacaban las nueces?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque pensó que les pertenecían a los niños",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque las nueces eran peligrosas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque las ardillas podrían necesitarlas en invierno",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque pensó que eran venenosas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué hizo Elena para compensar a las ardillas después de que los niños sacaron las nueces?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Les dio manzanas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Les llevó nueces nuevas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Llenó la cueva de las ardillas con maíz",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No hizo nada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué opinión tenían la mayoría de los niños sobre sacar las nueces del bosque?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Estaban de acuerdo con Elena",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "No les importaba lo que pensara Elena",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Creían que era peligroso",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pensaban que Elena tenía razón",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Por qué Elena eligió dar maíz a las ardillas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque era su comida favorita",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque era lo único que tenía",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque pensó que les gustaría más que las nueces",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque era más barato que las nueces",
+        "correct": false
+      }
+    ]
+  }
+]

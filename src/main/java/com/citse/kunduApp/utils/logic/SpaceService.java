@@ -1,4 +1,4 @@
-package com.citse.kunduApp.utils.contracts;
+package com.citse.kunduApp.utils.logic;
 
 import com.citse.kunduApp.entity.*;
 import com.citse.kunduApp.exceptions.KunduException;
@@ -6,6 +6,7 @@ import com.citse.kunduApp.repository.ListenerDao;
 import com.citse.kunduApp.repository.PersonDao;
 import com.citse.kunduApp.repository.SpaceDao;
 import com.citse.kunduApp.repository.UserDao;
+import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.models.Services;
 import io.agora.media.RtcTokenBuilder2;
 
@@ -44,9 +45,9 @@ public class SpaceService {
         var spaceSave = Space.builder()
           .name(space.getName())
           .description(space.getDescription())
-          .code(kus.SecureCode("KS"))
+          .code(kus.spaceSecureCode("KS"))
           .creation(LocalDateTime.now())
-          .token(generateTokenRoom())
+          .token(generateTokenRoom()).status(true)
           .moderator(User.builder().id(userId).build())
           .build();
         return spaceRepo.save(spaceSave);

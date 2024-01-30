@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuándo nació Elena Gould Harmon?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El 26 de noviembre de 1827",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "El 26 de diciembre de 1827",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "El 26 de noviembre de 1800",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "El 26 de octubre de 1827",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuántos hermanos tenía Elena al nacer?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Cuatro",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Seis",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Ocho",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Diez",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿De quién recibió Elena el apellido Harmon?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "De su madre Eunice",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "De su padre Robert",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "De su hermana Elizabeth",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "De su madre Eunice y su padre Robert",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué actividad realizaba la familia Harmon todas las mañanas antes del desayuno?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Leer la Biblia y hacer oración",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Ir a la Iglesia Metodista",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Contemplar la naturaleza",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Tomar el desayuno juntos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué le gustaba a Elena desde pequeña?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Ir a la Iglesia Metodista",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Contemplar la naturaleza y tener cariño por los animalitos",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Hacer oración antes de dormir",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Tomar el desayuno en familia",
+        "correct": false
+      }
+    ]
+  }
+]

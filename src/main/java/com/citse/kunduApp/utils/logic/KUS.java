@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
@@ -60,9 +61,25 @@ public class KUS implements KunduUtilitiesService {
                 "-"+random.nextInt(999)+"-"+random.nextInt(9999);
     }
 
+    @Override
+    public String spaceSecureCode(String acronym) {
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < 9; i++) {
+            int index = sr.nextInt(ALPHA_NUMERIC_STRING.length());
+            builder.append(ALPHA_NUMERIC_STRING.charAt(index));
+        }
+        return acronym+getCurrentDay()+random.nextInt(9)+"-"
+          +builder.toString();
+    }
+
     private static String getCurrentYear() {
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         return Integer.toString(year).substring(2);
+    }
+    private static String getCurrentDay(){
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        return Integer.toString(day);
     }
 }

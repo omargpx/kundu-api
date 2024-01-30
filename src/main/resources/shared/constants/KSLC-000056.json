@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué Jacob estaba triste y tuvo que huir de su hogar?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque perdió la bendición de su padre Isaac",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque engañó a su hermano Esaú y recibió la bendición que le pertenecía",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque Dios lo abandonó",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque estaba cansado de caminar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué vio Jacob en su sueño enviado por Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Un río que fluía hasta el cielo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Una escalera con ángeles subiendo y descendiendo",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Un jardín lleno de flores",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Un arco iris en el cielo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué promesa le hizo Dios a Jacob durante el sueño?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Que sería el rey de una gran nación",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que siempre estaría con él y sus descendientes serían una bendición para todas las familias de la Tierra",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Que encontraría un tesoro escondido",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que debería seguir caminando sin descanso",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Quién más en la Biblia recibió sueños especiales de Dios?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Abraham",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "José",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "David",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué reveló Dios a José a través de sus sueños?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "El final del mundo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El día de su liberación de la prisión",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "El futuro del copero y el panadero de Faraón",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "La ubicación de un tesoro escondido",
+        "correct": false
+      }
+    ]
+  }
+]

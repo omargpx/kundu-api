@@ -11,4 +11,5 @@ public interface KunduUtilitiesService {
     Map<String,String> BrowserSpecifyHeaders(HttpServletRequest request);
     KResponse getResponse(HttpServletRequest url, String origin,Object data, HttpStatus status);
     String SecureCode(String acronym);
+    String spaceSecureCode(String acronym);
 }

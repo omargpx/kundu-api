@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cómo se comunicaban las personas en los tiempos antiguos cuando querían mandar un mensaje urgente?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A través de WhatsApp",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Contrataban a un mensajero",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Enviaban un e-mail",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Escribían en Facebook o Instagram",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué tarea importante tenían los mensajeros en la antigüedad?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Proteger el mensaje con un tubo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hablar en nombre de Dios",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Llevar el mensaje y llegar a la persona",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Enviar mensajes por celular",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué significado tiene la palabra 'profeta'?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Hablar en nombre de Dios",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Proteger la Biblia",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Llevar mensajes urgentes",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Enviar e-mails",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Quién fue el primer profeta mencionado en la Biblia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Abrahán",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Enoc",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Moisés",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "María",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se comunicaba Dios directamente con los profetas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Escribiendo en las nubes",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hablando a través de truenos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Usando seres humanos como profetas",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Enviando mensajes por celular",
+        "correct": false
+      }
+    ]
+  }
+]

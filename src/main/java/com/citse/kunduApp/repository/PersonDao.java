@@ -1,5 +1,6 @@
 package com.citse.kunduApp.repository;
 
+import com.citse.kunduApp.entity.Member;
 import com.citse.kunduApp.entity.Person;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,5 +31,6 @@ public interface PersonDao extends JpaRepository<Person,Integer> {
     List<Person> getSuggestFriends(@Param("id") Integer id, Pageable pageable);
 
     Optional<Person> findByPhone(String phone);
+    Optional<Person> findByMember(Member member);
 
 }

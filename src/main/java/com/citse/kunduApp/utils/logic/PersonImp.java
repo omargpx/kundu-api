@@ -14,7 +14,6 @@ import com.citse.kunduApp.utils.models.Services;
 import com.citse.kunduApp.utils.models.SimplePerson;
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -203,6 +202,7 @@ public class PersonImp implements PersonService {
                 .id(user.getId())
                 .email(user.getEmail())
                 .username(user.getUsername())
+                .isConnect(user.getIsConnect())
                 .build();
     }
 }

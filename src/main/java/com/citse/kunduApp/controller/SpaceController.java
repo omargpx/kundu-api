@@ -2,7 +2,7 @@ package com.citse.kunduApp.controller;
 
 import com.citse.kunduApp.entity.Space;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
-import com.citse.kunduApp.utils.contracts.SpaceService;
+import com.citse.kunduApp.utils.logic.SpaceService;
 import com.citse.kunduApp.utils.models.Services;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;

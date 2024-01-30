@@ -1,5 +1,8 @@
 package com.citse.kunduApp.utils.models;
 
+import lombok.Getter;
+
+@Getter
 public enum SessionStatus {
     CLOSED(0, "Session is closed"),
     ON(1, "Session is on"),
@@ -14,11 +17,4 @@ public enum SessionStatus {
         this.description = description;
     }
 
-    public int getValue() {
-        return value;
-    }
-
-    public String getDescription() {
-        return description;
-    }
 }

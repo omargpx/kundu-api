@@ -42,6 +42,8 @@ public class User implements UserDetails {
     private Role role;
     @Column(name = "fe_last_connect")
     private LocalDateTime lastConnect;
+    @Column(name = "is_connect")
+    private Boolean isConnect;
 
     @JsonIgnore
     @OneToOne(mappedBy = "userDetail", cascade = CascadeType.MERGE)
