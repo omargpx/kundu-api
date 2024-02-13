@@ -21,7 +21,7 @@ import java.io.Serializable;
 @Table(name = "TAT_VAL_QUIZ")
 public class UserQuizResult implements Serializable {
     @Id
-    @Column(name = "id_val_member")
+    @Column(name = "id_val_quiz")
     private int id;
     @Column(name = "title_lesson")
     private String title;
@@ -38,6 +38,6 @@ public class UserQuizResult implements Serializable {
 
     @JsonIgnore
     @OneToOne
-    @JoinColumn(name = "id_val_member")
+    @JoinColumn(name = "fk_member_id")
     private Member memberResult;
 }

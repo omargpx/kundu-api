@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál era el deseo principal de los israelitas mientras estaban en Egipto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Volver a ser esclavos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Permanecer en Egipto para siempre",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Salir de Egipto y ser libres",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No tenían deseos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué celebraban los israelitas todos los años recordando lo que sucedió en Egipto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Navidad",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Hanukkah",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Pascua",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Acción de Gracias",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué simbolizaba el sacrificio del corderito en la Pascua?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La llegada de la primavera",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "La muerte de Jesús",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La libertad del pueblo israelita",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Lo que Jesús haría por nosotros",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cuál era el primer punto en la lista de deseos de Elena de White?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Tener un hogar en el cielo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Practicar las virtudes de Jesús",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Ser como Jesús",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Conocer la palabra de Dios cada vez más",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué pensaba Elena de White al expresar el deseo de que todos tengan un hogar en el cielo?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Solo algunos merecen un hogar en el cielo",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Nadie merece un hogar en el cielo",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Elena de White no quería que nadie tuviera un hogar en el cielo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Deseaba que todos tuvieran un hogar en el cielo",
+        "correct": true
+      }
+    ]
+  }
+]

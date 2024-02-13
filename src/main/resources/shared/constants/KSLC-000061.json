@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cómo eran las escuelas cuando Elena era niña?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Grandes y modernas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Pequeñas y simples",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Lujosas y tecnológicas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Con muchas sillas y mesas",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué material predominaba en el mobiliario de las escuelas de Elena?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Metal",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Plástico",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Madera",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Vidrio",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cómo castigaban los maestros a los alumnos que no cumplían tareas?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Con premios y reconocimientos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Ignorándolos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Aplicando castigos",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dejándolos libres",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Por qué Elena no tuvo suerte con su compañera de banco?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque no le gustaba estudiar",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque era demasiado disciplinada",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque desobedecía al maestro",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Porque siempre estaba enferma",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo reaccionó Elena cuando el maestro le pidió perdón?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Se enojó y no lo perdonó",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "No le respondió",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Lo perdonó y le aconsejó no ponerse nervioso",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Le pidió que lo castigara también",
+        "correct": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué tenía que hacer Jesús cuando se hizo adulto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Aprender a leer y escribir",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Tener un trabajo especial para salvarnos",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Ir a la iglesia regularmente",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Nacer como un bebé",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo Jesús recibía la energía que solo Dios podía dar?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A través de la lectura y escritura",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Por medio de la oración y el ayuno",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Comiendo sin parar",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Dejando de comer dulces",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Por qué Jesús dedicaba tiempo a la oración y al ayuno?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Para aprender a leer y escribir mejor",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Porque le gustaba hablar con la gente",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Para recibir las orientaciones de Dios y estar unido a Él",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Solo como una tradición religiosa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué sucede cuando comemos en exceso según el texto?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Nos volvemos más fuertes",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Nuestro estómago trabaja más para digerir la comida",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Obtenemos más energía para realizar nuestras tareas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Nos sentimos más ligeros",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué sugiere el texto como una forma de ayuno para niños?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Dejar de comer por un día entero",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Comer más frutas y alimentos saludables",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Comer muchos dulces",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No participar en ninguna actividad física",
+        "correct": false
+      }
+    ]
+  }
+]

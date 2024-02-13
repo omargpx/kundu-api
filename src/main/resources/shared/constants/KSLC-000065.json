@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿A qué edad fue llamada Elena por Dios para ser su mensajera?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "A los 9 años",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A los 17 años",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "A los 21 años",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "A los 14 años",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Elena enfrentó muchas dificultades?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Por problemas económicos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Debido a un accidente a los 9 años",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Por falta de educación",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Por desobedecer a Dios",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué visión recibió Elena durante un funeral?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "La historia de su vida",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El conflicto entre Cristo y Satanás",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "La guerra en el Cielo",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "El fin del mundo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué le advirtió Dios a Elena al pedirle que escribiera la visión?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Que abandonara su misión",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Que confiara en Dios a pesar de las dificultades",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Que lo mantuviera en secreto",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Que desistiera por la oposición de Satanás",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo especial al libro 'El conflicto de los siglos' para Elena?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Su popularidad",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El mensaje que contiene",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Su longitud",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La calidad del papel",
+        "correct": false
+      }
+    ]
+  }
+]

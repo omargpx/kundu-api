@@ -2,10 +2,7 @@ package com.citse.kunduApp.utils.logic;
 
 import com.citse.kunduApp.entity.*;
 import com.citse.kunduApp.exceptions.KunduException;
-import com.citse.kunduApp.repository.AssistDao;
-import com.citse.kunduApp.repository.MemberDao;
-import com.citse.kunduApp.repository.PersonDao;
-import com.citse.kunduApp.repository.UQRDao;
+import com.citse.kunduApp.repository.*;
 import com.citse.kunduApp.utils.contracts.UQRService;
 import com.citse.kunduApp.utils.models.Services;
 import com.citse.kunduApp.utils.models.SimpleMember;
@@ -29,6 +26,8 @@ public class Attendance implements UQRService {
     private AssistDao assistDao;
     @Autowired
     private PersonDao personDao;
+    @Autowired
+    private GroupDao groupDao;
 
 
     @Override
@@ -48,13 +47,15 @@ public class Attendance implements UQRService {
 
     @Override
     public Assist save(UserQuizResult uqr, int memberId, int sessionId) {
-        Member member = Member.builder().id(memberId).build();
+        Member member = memberDao.findById(memberId).orElseThrow();
+        Group group = groupDao.findById(member.getGroup().getId()).orElseThrow(()->
+          new KunduException(Services.ATTENDANCE_SERVICE.name()," group not found", HttpStatus.NOT_FOUND));
         Session session = Session.builder().id(sessionId).build();
         Assist verifyAssist = assistDao.findByMemberAndSession(member, session);
         uqr.setMemberResult(member);
 
         if (null != verifyAssist) {
-            updateExperienceAndQuizStatus(verifyAssist, uqr.getXp());
+            updateExperienceAndQuizStatus(verifyAssist, uqr.getXp(),group, uqr.getPoints());
             repo.save(uqr);
             return assistDao.findById(verifyAssist.getId()).orElseThrow();
         }
@@ -68,7 +69,7 @@ public class Attendance implements UQRService {
           .session(session)
           .build();
         var assistLog = assistDao.save(assist);
-        updateExperienceForMember(assistLog.getMember(), uqr.getXp());
+        updateExperienceForMember(member, uqr.getXp());
         return assistLog;
     }
 
@@ -93,13 +94,14 @@ public class Attendance implements UQRService {
         return assistDao.save(assist);
     }
 
-    private void updateExperienceAndQuizStatus(Assist assist, int xp) {
-        Optional<Person> person = personDao.findByMember(assist.getMember());
-        if (person.isEmpty())
-            throw new KunduException(Services.USER_QUIZ_RESULTS.name(),"Error to find person by member", HttpStatus.NOT_FOUND);
-        person.get().setExperience(person.get().getExperience() + xp);
+    private void updateExperienceAndQuizStatus(Assist assist, int xp, Group group, int points) {
+        Person person = personDao.findByMember(assist.getMember())
+          .orElseThrow(() -> new KunduException(Services.USER_QUIZ_RESULTS.name(), "Error finding person by member", HttpStatus.NOT_FOUND));
+        person.setExperience(person.getExperience() + xp);
         assist.setQuiz(true);
-        personDao.save(person.get());
+        group.setPoints(group.getPoints() + points);
+        groupDao.save(group);
+        personDao.save(person);
         assistDao.save(assist);
     }
 

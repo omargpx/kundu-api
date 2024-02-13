@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿A quién le mostró Dios que Elena debía hablar de Jesús?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "A su hermana Sara",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "A Jaime White",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "A algunas personas de una ciudad vecina",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Al hombre del sucarruaje",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Elena estaba preocupada cuando escuchó el primer silbato del tren?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Porque no tenía dinero para el pasaje",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque perdió sus cosas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque se olvidó algo en casa",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque llegó tarde a la estación",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Quién llegó en sucarruaje cuando Elena abrió la puerta de su casa?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Jaime White",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El hombre que oraba",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Sara, su hermana",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Nadie",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué pregunta hizo el hombre que llegó en sucarruaje?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "¿Quién necesita ayuda?",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "¿Alguien aquí necesita dinero?",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "¿Dónde está la estación de tren?",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "¿Puedo ir con ustedes?",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se sintieron Elena, Sara y Jaime White cuando el tren partió?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Nerviosos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Asustados",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Tristes",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Animados",
+        "correct": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuántos hijos tenía la familia de Elena, además de ella?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Dos",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cinco",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Ocho",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Diez",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál era la tarea diaria de Elena con respecto a Bossy?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Alimentarla con pasto",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Cepillarla",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Buscarla para ser ordeñada",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Jugar con ella",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué significa 'Bossy' en inglés según el texto?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Amigable",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Mandona",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Rápida",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Pequeña",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué hizo Elena para salvar a Bossy del pantano?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Llamó a su padre para que la ayudara",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Empujó a Bossy fuera del pantano",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le dio pasto para que lo alcanzara",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Dejó a Bossy en el pantano",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo se sintió Elena después de salvar a Bossy?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Triste",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Asustada",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Feliz",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Enojada",
+        "correct": false
+      }
+    ]
+  }
+]

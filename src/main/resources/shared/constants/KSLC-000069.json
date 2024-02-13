@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál era la costumbre de vestimenta de Elena Gould Harmon en su época?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Vestirse con ropa moderna",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Vestirse con ropa tradicional de esa época",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "No le importaba la vestimenta",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Usar uniforme militar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Cómo era conocida Elena Gould Harmon después de casarse?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Sra. Harmon",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Sra. White",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Sra. Gould",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Sra. Jaime",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿A qué edad recibió Elena Gould Harmon la llamada de Dios para un trabajo especial?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "25 años",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "17 años",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "30 años",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "20 años",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo enfrentaron Elena Gould Harmon y sus amigas la situación cuando Jesús no vino en la fecha esperada?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Desistieron y abandonaron la fe",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Continuaron orando y reuniéndose",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Se enojaron con Dios",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Ignoraron el incidente",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cómo describió Elena Gould Harmon la visión que tuvo durante una de las reuniones de oración?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Parecía un sueño pero era irreal",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Era como una película en su mente",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Era como un camino angosto con personas y Jesús al frente",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "No pudo describir la visión",
+        "correct": false
+      }
+    ]
+  }
+]

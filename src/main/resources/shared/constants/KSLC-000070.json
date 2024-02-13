@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué unió a José Bates, Jaime y Elena White, John Andrews, John Loughborough y Urías Smith para hacerse buenos amigos?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "El amor por la música",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "El deseo de conocer la verdad en la Biblia y el amor a Dios",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "La pasión por la pintura",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "La afinidad por los deportes extremos",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué papel desempeñó José Bates en el inicio de la Iglesia Adventista?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Capitán de navío",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Organizador de eventos",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Entendió la importancia del sábado como día de guardar",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Cocinero experto",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál era la habilidad destacada de Jaime que resultó útil para la iglesia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Carpintería",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Habilidad para el ajedrez",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Organización, especialmente en la publicación de materiales",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Habilidad en la jardinería",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo influyó la visita de Jaime y Elena White en la vida de John Loughborough?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Le regalaron unas herramientas",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Lo animaron a mudarse a otro lugar",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Elena le hizo recordar la historia de Elías cuando se sentía desanimado",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Le ofrecieron un trabajo en un negocio",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Cuál era la destacada inteligencia de John Andrews?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Inteligencia emocional",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Inteligencia artificial",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Inteligencia académica, lo que llevó a tener una universidad en su nombre",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Inteligencia musical",
+        "correct": false
+      }
+    ]
+  }
+]

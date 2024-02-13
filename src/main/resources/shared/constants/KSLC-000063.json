@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Por qué la maestra pedía a Elena que leyera las lecciones al resto de la clase?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque Elena era la mejor alumna de su clase.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Porque la maestra no sabía leer.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Porque Elena tenía muchos libros.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque la maestra quería molestar a los demás alumnos.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué sucedió en la plaza que cambió la vida de Elena?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Una niña mayor comenzó a burlarse y correr detrás de ellas.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Encontraron libros para todos los alumnos.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La maestra les pidió que leyeran en voz alta.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Elena y su hermana gemela ganaron un premio.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué le sucedió a Elena cuando intentaba correr para salir de la plaza?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Fue alcanzada en el rostro por una piedra.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se cayó al suelo inconsciente por cansancio.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Le rompieron sus libros.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Ganó la carrera contra la niña mayor.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Qué dificultades enfrentó Elena después del accidente?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No podía leer las palabras en los libros y sus manos temblaban al escribir.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "No podía correr tan rápido como antes.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se olvidó de la lección que había leído a sus compañeros.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Comenzó a odiar la naturaleza y las plantas.",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quién cuidó de Elena mientras estuvo en coma?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Su madre, la Sra. Harmon.",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "La niña mayor que lanzó la piedra.",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La maestra de la escuela.",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Elena cuidó de sí misma.",
+        "correct": false
+      }
+    ]
+  }
+]

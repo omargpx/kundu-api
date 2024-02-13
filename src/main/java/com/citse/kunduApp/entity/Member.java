@@ -41,7 +41,7 @@ public class Member implements Serializable {
     @OneToMany(mappedBy = "member")
     private List<Assist> assists;
 
-    @OneToOne(mappedBy = "memberResult", cascade = CascadeType.ALL)
-    @PrimaryKeyJoinColumn
+    @JsonIgnore
+    @OneToOne(mappedBy = "memberResult", cascade = CascadeType.MERGE)
     private UserQuizResult userQuizResult;
 }

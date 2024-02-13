@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hacía Leonard Hastings además de ser un estudioso de la Biblia?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Cuidaba del ganado",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Cosechaba papas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Predicaba sobre el regreso de Jesús",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Era un comerciante",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Por qué Leonard Hastings decidió no recoger las papas?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Porque estaba ocupado predicando",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Creía en el regreso de Jesús y pensaba que ocurriría pronto",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Porque no le gustaban las papas",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Porque estaba enfermo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué sucedió con las papas de Leonard Hastings cuando finalmente las recogió?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Se pudrieron y fueron inservibles",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Eran las mejores papas de la región",
+        "correct": true
+      },
+      {
+        "id": 3,
+        "alternative": "Fueron robadas por los vecinos",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Se las comió él solo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo afectó la plaga a las papas que los vecinos recogieron en la época establecida?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "No afectó en absoluto",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Las papas se volvieron más sabrosas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se pudrieron y perdieron todo",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Crecieron más rápido",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Qué hizo Leonard Hastings con las papas que recogió?",
+    "alternatives": [
+      {
+        "id": 1,
+        "alternative": "Las guardó sin compartirlas con nadie",
+        "correct": false
+      },
+      {
+        "id": 2,
+        "alternative": "Las vendió a un precio muy alto",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Alimentó a su familia y las vendió a los vecinos",
+        "correct": true
+      },
+      {
+        "id": 4,
+        "alternative": "Las donó a la iglesia",
+        "correct": false
+      }
+    ]
+  }
+]

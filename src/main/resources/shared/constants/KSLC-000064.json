@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué hacía Guillermo Miller para tener iluminación suficiente para la lectura cuando era niño?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Quemaba pedazos de madera en la chimenea",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Encendía velas",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Utilizaba lámparas de aceite",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No necesitaba iluminación",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "¿Qué hizo Guillermo Miller después de regresar a casa tras la guerra de 1812?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Ayudaba en la lectura de los sermones de la iglesia",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Se convirtió en capitán del ejército",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Dejó de leer la Biblia",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Viajó por el mundo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "¿Qué descubrió Guillermo Miller mientras leía la Biblia?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Descubrió algo maravilloso relacionado con el regreso de Jesús",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Decidió dejar de leer la Biblia",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Se aburrió de la lectura",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "No entendió nada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "¿Cómo llegó Guillermo Miller a ser conocido?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "Como predicador que anunciaba el regreso de Jesús",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "Como político",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "Como científico",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Como actor",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "¿Quiénes fueron algunas de las personas que escucharon el mensaje de Miller?",
+    "alternatives":[
+      {
+        "id": 1,
+        "alternative": "La familia de Elena Harmon",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "alternative": "La familia de Guillermo Miller",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "alternative": "La familia de Lucy",
+        "correct": false
+      },
+      {
+        "id": 4,
+        "alternative": "Nadie escuchó su mensaje",
+        "correct": false
+      }
+    ]
+  }
+]

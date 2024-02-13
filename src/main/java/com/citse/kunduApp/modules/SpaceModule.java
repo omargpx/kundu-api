@@ -46,6 +46,7 @@ public class SpaceModule {
         server.addEventListener("sendChannelMessage", POST.class, onChatChannel());
         server.addEventListener("sleepUser", SleepSocket.class, sleepConnection());
         server.addEventListener("unSleepUser", SleepSocket.class,unSleepConnection());
+        //audio-event
     }
 
     private DataListener<SleepSocket> unSleepConnection() {
