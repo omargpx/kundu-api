@@ -25,6 +25,12 @@ public class SpaceController {
         return ResponseEntity.ok(kus.getResponse(request, Services.SPACE_SERVICE.name(),service.create(space,userId), HttpStatus.OK));
     }
 
+    @GetMapping
+    public ResponseEntity<?> getAllFilters(@RequestParam(value = "code",required = false)String code,
+                                           HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request,Services.SPACE_SERVICE.name(),service.getByCode(code),HttpStatus.OK));
+    }
+
     @GetMapping("/spaces")
     public ResponseEntity<?> getSpaces(@RequestParam(name = "userId",required = false)Integer userId,
                                        @RequestParam(name = "pg",required = false)Integer pg,

@@ -44,7 +44,7 @@ public class SpaceService {
         validateUser(userId);
         var spaceSave = Space.builder()
           .name(space.getName())
-          .description(space.getDescription())
+          .description(space.getDescription() != null? space.getDescription() : "¡Welcome to my space!")
           .code(kus.spaceSecureCode("KS"))
           .creation(LocalDateTime.now())
           .token(generateTokenRoom()).status(true)
@@ -127,4 +127,8 @@ public class SpaceService {
           RtcTokenBuilder2.Role.ROLE_PUBLISHER, timestamp, timestamp);
     }
 
+    public Space getByCode(String code) {
+        return spaceRepo.findByCode(code).orElseThrow(
+          ()-> new KunduException(Services.SPACE_SERVICE.name(), "space not found",HttpStatus.NOT_FOUND));
+    }
 }

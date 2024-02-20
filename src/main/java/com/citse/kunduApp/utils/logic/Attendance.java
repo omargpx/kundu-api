@@ -37,6 +37,15 @@ public class Attendance implements UQRService {
         assert null!=uqr;
         return uqr;
     }
+
+    @Override
+    public Assist verifyAssistance(Integer sessionId, Integer memberId) {
+        Assist assistToVerify = assistDao.verifyAssist(memberId,sessionId);
+        if (null != assistToVerify)
+            return assistToVerify;
+        throw new KunduException(Services.USER_QUIZ_RESULTS.name(),"go ahead", HttpStatus.OK);
+    }
+
     @Override
     public List<Member> getAllByGroup(int groupId) {
         List<Member> members = memberDao.findAllByGroup(Group.builder().id(groupId).build());
@@ -55,8 +64,7 @@ public class Attendance implements UQRService {
         uqr.setMemberResult(member);
 
         if (null != verifyAssist) {
-            updateExperienceAndQuizStatus(verifyAssist, uqr.getXp(),group, uqr.getPoints());
-            repo.save(uqr);
+            updateExperienceAndQuizStatus(verifyAssist, uqr,group);
             return assistDao.findById(verifyAssist.getId()).orElseThrow();
         }
         //create row and save
@@ -94,15 +102,19 @@ public class Attendance implements UQRService {
         return assistDao.save(assist);
     }
 
-    private void updateExperienceAndQuizStatus(Assist assist, int xp, Group group, int points) {
+    private void updateExperienceAndQuizStatus(Assist assist, UserQuizResult uqr, Group group) {
         Person person = personDao.findByMember(assist.getMember())
           .orElseThrow(() -> new KunduException(Services.USER_QUIZ_RESULTS.name(), "Error finding person by member", HttpStatus.NOT_FOUND));
-        person.setExperience(person.getExperience() + xp);
+        person.setExperience(person.getExperience() + uqr.getXp());
         assist.setQuiz(true);
-        group.setPoints(group.getPoints() + points);
+        group.setPoints(group.getPoints() + uqr.getPoints());
         groupDao.save(group);
         personDao.save(person);
         assistDao.save(assist);
+        var verifyUqrExist = repo.findByMemberResult(assist.getMember())
+          .orElseThrow(() -> new KunduException(Services.USER_QUIZ_RESULTS.name(), "Error finding uqr by member", HttpStatus.NOT_FOUND));
+        if(null == verifyUqrExist)
+            repo.save(uqr);
     }
 
     private void updateExperienceForMember(Member member, int xp) {

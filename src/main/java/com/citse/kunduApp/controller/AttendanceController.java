@@ -38,6 +38,13 @@ public class AttendanceController {
         return ResponseEntity.ok(kus.getResponse(request,origin,"choose one",HttpStatus.OK));
     }
 
+    @GetMapping("/verify")
+    public ResponseEntity<?> verifyAttendance(@RequestParam(name = "sessionId")Integer sessionId,
+                                              @RequestParam(name = "memberId")Integer memberId,
+                                              HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request,origin,uqrService.verifyAssistance(sessionId,memberId),HttpStatus.OK));
+    }
+
     @PostMapping()
     public ResponseEntity<?> save(@RequestParam(name = "sessionId")Integer sessionId,
                                   @RequestParam(name = "memberId")Integer memberId,

@@ -15,4 +15,5 @@ public interface UQRService {
     Assist saveQRAssist(int sessionId, int memberId);
     UserQuizResult getById(int id);
 
+    Assist verifyAssistance(Integer sessionId, Integer memberId);
 }
