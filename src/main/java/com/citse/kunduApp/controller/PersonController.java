@@ -2,6 +2,7 @@ package com.citse.kunduApp.controller;
 
 import com.citse.kunduApp.entity.Person;
 import com.citse.kunduApp.exceptions.KunduException;
+import com.citse.kunduApp.utils.contracts.FollowService;
 import com.citse.kunduApp.utils.contracts.KunduUtilitiesService;
 import com.citse.kunduApp.utils.contracts.PersonService;
 import com.citse.kunduApp.utils.models.Services;
@@ -22,6 +23,8 @@ public class PersonController {
     private PersonService service;
     @Autowired
     private KunduUtilitiesService kus;
+    @Autowired
+    private FollowService followService;
     private static final String origin = Services.PERSON_SERVICE.name();
     //endregion
 
@@ -76,5 +79,11 @@ public class PersonController {
     public ResponseEntity<?> updatePerson(@PathVariable int id, @RequestBody Person person,
                                           HttpServletRequest request){
         return ResponseEntity.ok(kus.getResponse(request,origin,service.update(id,person),HttpStatus.OK));
+    }
+
+    @PostMapping("/setFollow")
+    public ResponseEntity<?> setFollow(@RequestParam("from")int from,
+                                       @RequestParam("to")int to, HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request,origin,followService.save(from,to), HttpStatus.OK));
     }
 }
