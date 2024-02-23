@@ -43,7 +43,7 @@ public class Attendance implements UQRService {
         Assist assistToVerify = assistDao.verifyAssist(memberId,sessionId);
         if (null != assistToVerify)
             return assistToVerify;
-        throw new KunduException(Services.USER_QUIZ_RESULTS.name(),"go ahead", HttpStatus.OK);
+        throw new KunduException(Services.USER_QUIZ_RESULTS.name(),"go ahead", HttpStatus.ACCEPTED);
     }
 
     @Override

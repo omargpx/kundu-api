@@ -11,4 +11,5 @@ import org.springframework.stereotype.Repository;
 public interface FollowDao extends JpaRepository<Follow,Integer> {
     Page<Follow> findByFollower(Person follower, Pageable pageable);
     Page<Follow> findByFollowed(Person followed, Pageable pageable);
+    Follow findByFollowerAndFollowed(Person follower, Person followed);
 }

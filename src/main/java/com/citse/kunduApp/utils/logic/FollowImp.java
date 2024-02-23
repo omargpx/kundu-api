@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+
 @Service
 public class FollowImp implements FollowService {
 
@@ -26,7 +28,23 @@ public class FollowImp implements FollowService {
           new KunduException(Services.FOLLOW_SERVICE.name(),"follow person id not found", HttpStatus.NOT_FOUND));
         Person followed = personDao.findById(to).orElseThrow(() ->
           new KunduException(Services.FOLLOW_SERVICE.name(),"followed person id not found", HttpStatus.NOT_FOUND));
-        Follow log = Follow.builder().follower(follower).followed(followed).build();
+        Follow log = Follow.builder().follower(follower).followed(followed).date(LocalDate.now()).build();
+        Follow verifyFollow = repo.findByFollowerAndFollowed(follower,followed);
+        if(null!=verifyFollow)
+            throw new KunduException(Services.FOLLOW_SERVICE.name(),"Already following", HttpStatus.ACCEPTED);
         return repo.save(log);
+    }
+
+    @Override
+    public Object unfollow(int from, int to) {
+        Person follower = personDao.findById(from).orElseThrow(() ->
+          new KunduException(Services.FOLLOW_SERVICE.name(),"follow person id not found", HttpStatus.NOT_FOUND));
+        Person followed = personDao.findById(to).orElseThrow(() ->
+          new KunduException(Services.FOLLOW_SERVICE.name(),"followed person id not found", HttpStatus.NOT_FOUND));
+        Follow verifyFollow = repo.findByFollowerAndFollowed(follower,followed);
+        if(null==verifyFollow)
+            throw new KunduException(Services.FOLLOW_SERVICE.name(),"Field doesn't exist", HttpStatus.NOT_FOUND);
+        repo.delete(verifyFollow);
+        return "unfollow success";
     }
 }

@@ -86,4 +86,10 @@ public class PersonController {
                                        @RequestParam("to")int to, HttpServletRequest request){
         return ResponseEntity.ok(kus.getResponse(request,origin,followService.save(from,to), HttpStatus.OK));
     }
+
+    @DeleteMapping("/unfollow")
+    public ResponseEntity<?> unfollow(@RequestParam("from")int from,
+                                       @RequestParam("to")int to, HttpServletRequest request){
+        return ResponseEntity.ok(kus.getResponse(request,origin,followService.unfollow(from,to), HttpStatus.OK));
+    }
 }
