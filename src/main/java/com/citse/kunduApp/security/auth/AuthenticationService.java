@@ -62,6 +62,7 @@ public class AuthenticationService {
                 .role(request.getRole()!=null? request.getRole() : Role.USER)
                 .lastConnect(LocalDateTime.now())
                 .secure(request.getSecure())
+                .isConnect(false)
                 .build();
         var savedUser = userRepo.save(user);
         var person = Person.builder()

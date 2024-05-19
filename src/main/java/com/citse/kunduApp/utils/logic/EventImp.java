@@ -33,7 +33,7 @@ public class EventImp implements EventService {
         Page<Event> events = repo.findAll(pageable);
         if(!events.isEmpty())
             return events.getContent();
-        throw new KunduException(Services.EVENT_SERVICE.name(),"Events are empty", HttpStatus.NO_CONTENT);
+        return new ArrayList<>();
     }
 
     @Override

@@ -35,19 +35,20 @@ public class SpaceService {
     private final PersonDao personRepo;
     private final KunduUtilitiesService kus;
     private final ListenerDao listenerRepo;
-    private static final String appId = "b8dcc3cc668946359839f718fa335508";// omar - 3fb16d53c7f441d6ba2231a860e1cbc5
-    private static final String appCertificate = "92e33779cc404513872c91dc3fd451d9"; //omar - 2cf779073aa048ff8e5192ff2010eec6
+    private static final String appId = "13b5a74c438349d99b1879b523926027";// omar - 3fb16d53c7f441d6ba2231a860e1cbc5
+    private static final String appCertificate = "fbdf123441104c8aaa025361befbe375"; //omar - 2cf779073aa048ff8e5192ff2010eec6
     //endregion
 
     @Transactional
     public Space create(Space space, Integer userId) {
+        var code_space = kus.spaceSecureCode("KSS");
         validateUser(userId);
         var spaceSave = Space.builder()
           .name(space.getName())
           .description(space.getDescription() != null? space.getDescription() : "¡Welcome to my space!")
-          .code(kus.spaceSecureCode("KS"))
+          .code(code_space)
           .creation(LocalDateTime.now())
-          .token(generateTokenRoom()).status(true)
+          .token(generateTokenRoom(code_space)).status(true)
           .moderator(User.builder().id(userId).build())
           .build();
         return spaceRepo.save(spaceSave);
@@ -119,11 +120,10 @@ public class SpaceService {
           .userSpace(user)
           .build();
     }
-    private String generateTokenRoom() {
+    private String generateTokenRoom(String code) {
         RtcTokenBuilder2 token = new RtcTokenBuilder2();
         int timestamp = (int) (System.currentTimeMillis() / 1000 + 3600);
-        String codeRoom = kus.SecureCode("KS");
-        return token.buildTokenWithUid(appId, appCertificate, codeRoom, 0,
+        return token.buildTokenWithUid(appId, appCertificate, code, 0,
           RtcTokenBuilder2.Role.ROLE_PUBLISHER, timestamp, timestamp);
     }
 
