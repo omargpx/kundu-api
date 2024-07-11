@@ -33,10 +33,13 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http.csrf()
                 .disable().authorizeHttpRequests()
-                .requestMatchers("/",
+                .requestMatchers("/", // public urls
                         "/api/auth/**",
                         "/avatars",
-                        "/info"
+                        "/info",
+                        //
+                        "/api/group/all",
+                        "/api/group/ranking"
                 )
                 .permitAll()
 

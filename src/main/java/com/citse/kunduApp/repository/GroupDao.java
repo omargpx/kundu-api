@@ -3,6 +3,7 @@ package com.citse.kunduApp.repository;
 import com.citse.kunduApp.entity.Group;
 import com.citse.kunduApp.entity.Member;
 import com.citse.kunduApp.entity.Session;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -22,4 +23,7 @@ public interface GroupDao extends JpaRepository<Group,Integer> {
 
     @Query("DELETE FROM Session s WHERE s.groupSession = :group")
     void cleanSessions(@Param("group")Group group);
+
+    @Query("SELECT g FROM Group g ORDER BY g.points DESC")
+    List<Group> findTop10GroupsByOrderByPointsDesc(Pageable pageable);
 }

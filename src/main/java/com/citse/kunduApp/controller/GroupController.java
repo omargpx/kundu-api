@@ -13,6 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.Objects;
+
 @RestController
 @RequestMapping("/api/group")
 public class GroupController {
@@ -24,6 +27,17 @@ public class GroupController {
     private KunduUtilitiesService kus;
     private static final String origin = Services.GROUP_SERVICE.name();
     //endregion
+
+
+    @GetMapping("/all")
+    public ResponseEntity<?> getAllPublic(@RequestParam(name = "pg",required = false)Integer page,
+                                          HttpServletRequest request){
+        if(null!=page){
+            Pageable pageable = PageRequest.of(page,50);
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getGroupPages(pageable), HttpStatus.OK));
+        }
+        return ResponseEntity.ok(kus.getResponse(request,origin,service.getGroupPages(PageRequest.of(0,50)), HttpStatus.OK));
+    }
 
     @GetMapping
     public ResponseEntity<?> getAll(@RequestParam(name = "code",required = false)String code,
@@ -39,6 +53,13 @@ public class GroupController {
             return ResponseEntity.ok(kus.getResponse(request,origin,service.getGroupPages(pageable), HttpStatus.OK));
         }
         return ResponseEntity.ok(kus.getResponse(request,origin,service.getGroupPages(PageRequest.of(0,50)), HttpStatus.OK));
+    }
+
+    @GetMapping("/ranking")
+    public ResponseEntity<?> getRankingGroups(@RequestParam(name = "limit",required = false)Integer limit,
+                                              HttpServletRequest request){
+        //TODO: filter by entities
+        return ResponseEntity.ok(kus.getResponse(request, origin, service.getRankingOfGeneralGroups(Objects.requireNonNullElse(limit, 10)), HttpStatus.OK));
     }
 
     @PostMapping
