@@ -21,4 +21,5 @@ public interface GroupService {
     List<Session> getSessionFromGroupByCode(String code);
     List<GroupDTO> getRankingOfGeneralGroups(int limit);
     List<?> getMembersByGroupCode(String code);
+    List<GroupDTO> getRankingByEntityAndPhase(Integer entityId, Integer phase);
 }

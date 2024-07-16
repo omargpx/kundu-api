@@ -57,8 +57,12 @@ public class GroupController {
 
     @GetMapping("/ranking")
     public ResponseEntity<?> getRankingGroups(@RequestParam(name = "limit",required = false)Integer limit,
+                                              @RequestParam(name = "entity", required = false)Integer entityId,
+                                              @RequestParam(name = "phase", required = false)Integer phase,
                                               HttpServletRequest request){
         //TODO: filter by entities
+        if(null!=entityId && null!=phase)
+            return ResponseEntity.ok(kus.getResponse(request,origin,service.getRankingByEntityAndPhase(entityId,phase),HttpStatus.OK));
         return ResponseEntity.ok(kus.getResponse(request, origin, service.getRankingOfGeneralGroups(Objects.requireNonNullElse(limit, 10)), HttpStatus.OK));
     }
 

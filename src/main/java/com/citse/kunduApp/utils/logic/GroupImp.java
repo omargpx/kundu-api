@@ -138,7 +138,7 @@ public class GroupImp implements GroupService {
     @Override
     public List<GroupDTO> getRankingOfGeneralGroups(int limit) {
         Pageable pageable = PageRequest.of(0, limit);
-        List<Group> groups = repo.findTop10GroupsByOrderByPointsDesc(pageable);
+        List<Group> groups = repo.findAllGroupsByOrderByPointsDesc(pageable);
         if(groups.isEmpty())
             throw new KunduException(Services.GROUP_SERVICE.name(),"Groups is empty", HttpStatus.NO_CONTENT);
         return groups.stream()
@@ -154,6 +154,16 @@ public class GroupImp implements GroupService {
         if (null== group)
             throw new KunduException(Services.GROUP_SERVICE.name(),"Group not found", HttpStatus.NOT_FOUND);
         return repo.getMembersByGroup(group).stream().map(this::memberToDTO).toList();
+    }
+
+    @Override
+    public List<GroupDTO> getRankingByEntityAndPhase(Integer entityId, Integer phase) {
+        List<Group> requestRanking = repo.findTop10ByEntityIdAndPhase(entityId,phase);
+        if(requestRanking.isEmpty())
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Not found groups with this params", HttpStatus.NOT_FOUND);
+        return requestRanking.stream()
+                .map(this::groupToDTO)
+                .collect(Collectors.toList());
     }
 
     private GroupDTO groupToDTO(Group group){

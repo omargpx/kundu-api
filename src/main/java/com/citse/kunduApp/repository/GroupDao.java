@@ -18,12 +18,14 @@ public interface GroupDao extends JpaRepository<Group,Integer> {
     @Query("SELECT s FROM Session s WHERE s.groupSession = :group")
     List<Session> getSessionsByGroupCode(@Param("group")Group group);
 
-    @Query("SELECT m FROM Member m WHERE m.group = :group")
+    @Query(value = "SELECT m FROM Member m WHERE m.group = :group")
     List<Member> getMembersByGroup(@Param("group")Group group);
 
     @Query("DELETE FROM Session s WHERE s.groupSession = :group")
     void cleanSessions(@Param("group")Group group);
 
-    @Query("SELECT g FROM Group g ORDER BY g.points DESC")
-    List<Group> findTop10GroupsByOrderByPointsDesc(Pageable pageable);
+    List<Group> findAllGroupsByOrderByPointsDesc(Pageable pageable);
+
+    @Query("SELECT g FROM Group g JOIN g.gEntity e WHERE e.id = :entityId AND g.phase = :phase ORDER BY g.points DESC")
+    List<Group> findTop10ByEntityIdAndPhase(@Param("entityId") Integer entityId, @Param("phase") Integer phase);
 }
