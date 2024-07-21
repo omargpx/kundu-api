@@ -7,9 +7,11 @@ import com.citse.kunduApp.repository.EntityDao;
 import com.citse.kunduApp.repository.EventDao;
 import com.citse.kunduApp.repository.GroupDao;
 import com.citse.kunduApp.utils.contracts.EventService;
+import com.citse.kunduApp.utils.models.EventType;
 import com.citse.kunduApp.utils.models.Services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -77,6 +79,20 @@ public class EventImp implements EventService {
             allEvents.addAll(events);
         }
         return allEvents;
+    }
+
+    @Override
+    public List<Event> getByAllFilters(EventType eventType, String name, int limit) {
+        Pageable page = PageRequest.of(0,limit);
+        boolean isEventTypeNull = eventType == null;
+        boolean isNameNull = name == null || name.isEmpty();
+        List<Event> eventsFilter;
+        if(isEventTypeNull && isNameNull)
+            return getAll(page);
+        eventsFilter = repo.findAllEventsByFilters(eventType, name, page);
+        if(eventsFilter.isEmpty())
+            throw new KunduException(Services.GROUP_SERVICE.name(),"Not found events", HttpStatus.NOT_FOUND);
+        return eventsFilter;
     }
 
     /* Filter all entity fathers where [entityId]
