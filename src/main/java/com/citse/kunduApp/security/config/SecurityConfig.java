@@ -39,7 +39,8 @@ public class SecurityConfig {
                         "/info",
                         //
                         "/api/group/all",
-                        "/api/group/ranking"
+                        "/api/group/ranking",
+                        "/api/event/all"
                 )
                 .permitAll()
 
