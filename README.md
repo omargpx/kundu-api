@@ -5,7 +5,7 @@
 # Docs
 
 - [Nomenclature](#nomenclature)
-- [Database diagram](https://github.com/citseOfficial/Kundu-api/tree/main/src/main/resources/.github/kundu_diagram-v2.png)
+- [Database diagram](https://github.com/omargpx/kundu-api/blob/main/src/main/resources/.github/kundu_diagram-v2.png)
 - [Kundu avatars](https://ibb.co/album/dWqKW6)
 
 # Nomenclature
